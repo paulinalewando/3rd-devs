@@ -145,7 +145,7 @@
     "pdf2html": "3.1.0",
     "pdf2pic": "^3.1.3",
     "pdfjs-dist": "^4.7.76",
-    "promptfoo": "^0.93.0",
+    "promptfoo": "^0.112.4",
     "puppeteer": "23.5.2",
     "recordrtc": "^5.6.2",
     "replicate": "^0.33.0",
@@ -171,10 +171,19 @@
     "zod": "^3.23.8"
   },
   "trustedDependencies": [
+    "@playwright/browser-chromium",
+    "better-sqlite3",
+    "bufferutil",
+    "canvas",
+    "esbuild",
     "faiss-node",
     "markmap-cli",
     "node-vad",
     "onnxruntime-node",
-    "protobufjs"
+    "pdf2html",
+    "protobufjs",
+    "puppeteer",
+    "sharp",
+    "utf-8-validate"
   ]
 }
