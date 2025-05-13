@@ -70,7 +70,8 @@
     "audio:dev": "vite --config vite.config.audio.ts",
     "map:dev": "vite --config vite.config.map.ts",
     "camera:dev": "vite --config vite.config.camera.ts",
-    "notes": "bun run notes/app.ts"
+    "notes": "bun run notes/app.ts",
+    "robot-login": "bun run robot-login/app.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"
@@ -134,6 +135,7 @@
     "mime-types": "^2.1.35",
     "multer": "^1.4.5-lts.1",
     "neo4j-driver": "^5.26.0",
+    "node-fetch": "^3.3.2",
     "node-html-parser": "^6.1.13",
     "node-microphone": "^0.1.6",
     "node-vad": "^1.1.4",
