@@ -5,3 +5,4 @@ evaluation_basics/.env
 node_modules/
 **/*.db
 .vscode/
+files/context/

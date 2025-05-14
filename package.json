@@ -72,7 +72,8 @@
     "camera:dev": "vite --config vite.config.camera.ts",
     "notes": "bun run notes/app.ts",
     "exercise1": "bun run exercise1/app.ts",
-    "exercise2": "bun run exercise2/app.ts"
+    "exercise2": "bun run exercise2/app.ts",
+    "exercise3": "bun run exercise3/app.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"
