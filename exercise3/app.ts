@@ -105,7 +105,10 @@ async function answerTestQuestions(jsonData: any): Promise<any> {
         ];
 
         try {
-          const response = await openAIService.completion(messages);
+          const response = await openAIService.completion(
+            messages,
+            "gpt-4o-mini"
+          );
           if ("choices" in response) {
             const answer =
               response.choices[0]?.message?.content?.trim() ||
