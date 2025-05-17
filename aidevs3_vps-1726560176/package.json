@@ -1,0 +1,21 @@
+{
+  "name": "prod",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@microsoft/tiktokenizer": "^1.0.8",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "openai": "^4.61.1",
+    "uuid": "^10.0.0"
+  },
+  "scripts": {
+    "start": "bun app.ts"
+  }
+}
