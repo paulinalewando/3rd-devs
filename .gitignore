@@ -6,3 +6,4 @@ node_modules/
 **/*.db
 .vscode/
 files/context/
+.cursor/rules/
