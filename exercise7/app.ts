@@ -12,6 +12,58 @@ import { readdir } from "fs/promises";
 
 const openAIService = new OpenAIService();
 
+async function extractTextFromImage(imagePath: string): Promise<string> {
+  try {
+    // Read the image file
+    const fileData = await readFile(imagePath);
+    const base64Image = fileData.toString("base64");
+
+    // Create a message with the image
+    const content: (
+      | ChatCompletionContentPartImage
+      | ChatCompletionContentPartText
+    )[] = [
+      {
+        type: "text",
+        text: "Extract all text visible in this image. Return only the extracted text with no additional commentary.",
+      } as ChatCompletionContentPartText,
+      {
+        type: "image_url",
+        image_url: {
+          url: `data:image/png;base64,${base64Image}`,
+          detail: "high",
+        },
+      } as ChatCompletionContentPartImage,
+    ];
+
+    const messages: ChatCompletionMessageParam[] = [
+      {
+        role: "system",
+        content:
+          "You are a text extraction assistant. Your only job is to extract and return all visible text from images. Return only the extracted text with no additional commentary or explanations.",
+      },
+      {
+        role: "user",
+        content: content,
+      },
+    ];
+
+    const chatCompletion = (await openAIService.completion(
+      messages,
+      "gpt-4o",
+      false,
+      false,
+      1500,
+      0.2
+    )) as ChatCompletion;
+
+    return chatCompletion.choices[0].message.content || "No text found";
+  } catch (error) {
+    console.error("Error extracting text from image:", error);
+    throw error;
+  }
+}
+
 async function processImagesCollectively(): Promise<void> {
   const imageFolder = join(__dirname, "images");
   const files = await readdir(imageFolder);
@@ -112,4 +164,25 @@ And so on...`,
   console.log(chatCompletion.choices[0].message.content);
 }
 
-await processImagesCollectively();
+async function processImage(filename: string): Promise<string> {
+  const imagePath = join(__dirname, "images", filename);
+  try {
+    console.log(`Processing image: ${filename}`);
+    const extractedText = await extractTextFromImage(imagePath);
+    return extractedText;
+  } catch (error) {
+    console.error(`Error processing image ${filename}:`, error);
+    throw error;
+  }
+}
+
+async function main() {
+  try {
+    const text = await processImage("5.png");
+    console.log("Extracted text:");
+    console.log(text);
+  } catch (error) {
+    console.error("Failed to process image:", error);
+  }
+}
+main();
