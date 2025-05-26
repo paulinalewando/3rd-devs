@@ -1,0 +1,128 @@
+{
+  "2024-11-12_report-13.png": {
+    "filename": "2024-11-12_report-13.png",
+    "type": "png",
+    "extractedContent": "REPAIR NOTE\n\nFROM: Repair department\n\nGodzina 08:15. Rozpoczęto naprawę anteny nadawczej w sektorze komunikacyjnym. Uszkodzenie powstało wskutek długotrwałej ekspozycji na warunki atmosferyczne, co osłabiło sygnał przesyłowy. Wymieniono główny element przekaźnika oraz dokręcono panel stabilizacyjny. Test przesyłu sygnału zakończony pozytywnie. Antena działa zgodnie ze specyfikacją.\n\nAPPROVED BY Joseph N.",
+    "category": "hardware",
+    "processed": true
+  },
+  "2024-11-12_report-12-sektor_A1.mp3": {
+    "filename": "2024-11-12_report-12-sektor_A1.mp3",
+    "type": "mp3",
+    "extractedContent": "Szefie! Jak zaprowadziliśmy, poszukiwaliśmy tenementy w bliskiej miasteczce dla rebelów. Nie mogliśmy znaleźć nikogo. Wygląda na to, że miasto zostało opuszczone przez długi czas. Już mamy plany, aby poszukiwać więcej miast w nadchodzących dniach.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-15.png": {
+    "filename": "2024-11-12_report-15.png",
+    "type": "png",
+    "extractedContent": "```\nREPAIR NOTE\n\nFROM: Repair department\n\nGodzina 11:50. W czujniku ruchu wykryto usterkę\nspowodowaną zwarciem kabli. Przyczyną była mała\nmysz, która dostała się między przewody,\npowodując chwilowe przerwy w działaniu sensorów.\nOdłączono zasilanie, usunięto ciało obce i\nzabezpieczono osłony kabli przed dalszymi\nuszkodzeniami. Czujnik ponownie skalibrowany i\nsprawdzony pod kątem poprawności działania.\n\nAPPROVED BY Joseph N.\n```",
+    "category": "hardware",
+    "processed": true
+  },
+  "2024-11-12_report-14.png": {
+    "filename": "2024-11-12_report-14.png",
+    "type": "png",
+    "extractedContent": "REPAIR NOTE\n\nFROM: Repair department\n\nGodzina 15:45. Zakończono aktualizację systemu komunikacji jednostek mobilnych. Dodano możliwość dynamicznego przydzielania kanałów w zależności od obciążenia oraz zaimplementowano protokół szyfrowania QII dla bezpieczniejszej wymiany danych. Test komunikacji między jednostkami wykazał pełną kompatybilność z nowym systemem. Monitorowanie aktywne w trybie bieżącym.\n\nAPPROVED BY Joseph N.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-16.png": {
+    "filename": "2024-11-12_report-16.png",
+    "type": "png",
+    "extractedContent": "REPAIR NOTE\n\nFROM:   Repair department\n\nGodzina 13:30. Przeprowadzono aktualizację\nmodułu AI analizującego wzorce ruchu.\nWprowadzono dodatkowe algorytmy umożliwiające\nszybsze przetwarzanie i bardziej precyzyjną\nanalizę zachowań niepożądanych. Aktualizacja\nzakończona sukcesem, wydajność systemu wzrosła o\n18%, co potwierdzają pierwsze testy operacyjne.\nAlgorytmy działają w pełnym zakresie\n\nAPPROVED BY Joseph N.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-17.png": {
+    "filename": "2024-11-12_report-17.png",
+    "type": "png",
+    "extractedContent": "REPAIR NOTE\n\nFROM: Repair department\n\nGodzina 09:20. Przeprowadzono procedurę wymiany przestarzałych ogniw w jednostkach mobilnych. Dotychczasowe ogniwa wykazywały obniżoną wydajność, wpływającą na zdolność operacyjną jednostek w dłuższych trasach patrolowych. Nowe ogniwa zostały zainstalowane zgodnie z wytycznymi technicznymi, a czas pracy jednostek uległ zwiększeniu o 15%. Monitorowanie w toku.\n\nAPPROVED BY Joseph N.",
+    "category": "hardware",
+    "processed": true
+  },
+  "2024-11-12_report-11-sektor-C2.mp3": {
+    "filename": "2024-11-12_report-11-sektor-C2.mp3",
+    "type": "mp3",
+    "extractedContent": "Wiem, że nie powinienem mówić o tym, ale nastawienie w naszej brygadzie jest niebezpieczne. Uważam, że to zależy od naszego ucieczki z pizzą. Roboty mogą przeżywać miesiące bez tego, ale my, ludzie, niestety nie możemy. Ze względu na całą drużynę, chciałbym zaprosić o przyjęcie pizzy. Słyszymy, że jest przyjęciem człowieka na terenie nazywanego Matthew, który nie tylko może przyjęć nam taką pizzę, ale również ją gotować. Byłoby może warto przyjęcia go do naszej drużyny?",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-05-sektor_C1.txt": {
+    "filename": "2024-11-12_report-05-sektor_C1.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 04:02. Bez wykrycia aktywności organicznej lub technologicznej. Sensor dźwiękowy i detektory ruchu w pełnej gotowości. Bez niepokojących sygnałów w trakcie patrolu. Kontynuuję monitorowanie.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-03-sektor_A3.txt": {
+    "filename": "2024-11-12_report-03-sektor_A3.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 01:30. Przebieg patroli nocnych na poziomie ściśle monitorowanym. Czujniki pozostają aktywne, a wytyczne dotyczące wykrywania życia organicznego – bez rezultatów. Stan patrolu bez zakłóceń.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-06-sektor_C2.txt": {
+    "filename": "2024-11-12_report-06-sektor_C2.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 22:50. Sektor północno-zachodni spokojny, stan obszaru stabilny. Skanery temperatury i ruchu wskazują brak wykrycia. Jednostka w pełni operacyjna, powracam do dalszego patrolu.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-00-sektor_C4.txt": {
+    "filename": "2024-11-12_report-00-sektor_C4.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 22:43. Wykryto jednostkę organiczną w pobliżu północnego skrzydła fabryki. Osobnik przedstawił się jako Aleksander Ragowski. Przeprowadzono skan biometryczny, zgodność z bazą danych potwierdzona. Jednostka przekazana do działu kontroli. Patrol kontynuowany.",
+    "category": "people",
+    "processed": true
+  },
+  "2024-11-12_report-04-sektor_B2.txt": {
+    "filename": "2024-11-12_report-04-sektor_B2.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 23:45. Patroluje zachodnią część terenu; brak anomalii ani odchyleń od normy. Sektor bezpieczny, wszystkie kanały komunikacyjne czyste. Przechodzę do następnego punktu.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-01-sektor_A1.txt": {
+    "filename": "2024-11-12_report-01-sektor_A1.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 03:26. Wstępny alarm wykrycia – ruch organiczny. Analiza wizualna i sensoryczna wykazała obecność lokalnej zwierzyny leśnej. Fałszywy alarm. Obszar bezpieczny, wracam na trasę patrolu. Spokój przywrócony.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-10-sektor-C1.mp3": {
+    "filename": "2024-11-12_report-10-sektor-C1.mp3",
+    "type": "mp3",
+    "extractedContent": "Boss! Znalazliśmy jednego gościa, który siedział za brzegiem brzegu. Rozmawiał z kimś, który posiadał urządzenie alarmowe. Nie powiedział, co robił tutaj, czy kto był. Został zatrzymany. Po tym wypadku, zespół wrócił na patrolę okoliczności.",
+    "category": "people",
+    "processed": true
+  },
+  "2024-11-12_report-02-sektor_A3.txt": {
+    "filename": "2024-11-12_report-02-sektor_A3.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 02:15. Obszar patrolu nocnego cichy, bez wykrycia aktywności organicznej ani mechanicznej. Prowadzony monitoring peryferii obiektu. Kontynuacja zadań.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-07-sektor_C4.txt": {
+    "filename": "2024-11-12_report-07-sektor_C4.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 00:11. Czujniki dźwięku wykryły ultradźwiękowy sygnał, pochodzenie: nadajnik ukryty w zielonych krzakach, nieopodal lasu. Przeprowadzono analizę obiektu. Analiza odcisków palców wskazuje osobę o imieniu Barbara Zawadzka, skorelowano z bazą urodzeń. Nadajnik przekazany do działu śledczego. Obszar zabezpieczony, patrol zakończony bez dalszych incydentów.\n",
+    "category": "people",
+    "processed": true
+  },
+  "2024-11-12_report-08-sektor_A1.txt": {
+    "filename": "2024-11-12_report-08-sektor_A1.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 01:00. Monitoring obszaru patrolowego: całkowity brak ruchu. Względna cisza, czujniki nie wykazały aktywności. Kontynuuję obserwację terenu według wyznaczonych wytycznych.",
+    "category": "none",
+    "processed": true
+  },
+  "2024-11-12_report-09-sektor_C2.txt": {
+    "filename": "2024-11-12_report-09-sektor_C2.txt",
+    "type": "txt",
+    "extractedContent": "Godzina 03:45. Patrol na peryferiach zachodnich zakończony. Czujniki nie wykazały żadnych niepokojących sygnałów. Obszar bez anomalii, kończę bieżący cykl i przechodzę do kolejnego sektora.",
+    "category": "none",
+    "processed": true
+  }
+}

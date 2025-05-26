@@ -1,5 +1,4 @@
-import OpenAI, { toFile } from "openai";
-import type { ChatCompletionMessageParam } from "openai/resources/chat/completions";
+import OpenAI from "openai";
 
 export class OpenAIService {
   private openai: OpenAI;
