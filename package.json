@@ -79,7 +79,8 @@
     "exercise6": "bun run exercise6/app.ts",
     "exercise7": "bun run exercise7/app.ts",
     "exercise8": "bun run exercise8/app.ts",
-    "exercise9": "bun run exercise9/app.ts"
+    "exercise9": "bun run exercise9/app.ts",
+    "exercise10": "bun run exercise10/app.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"
