@@ -1,0 +1,450 @@
+[
+  {
+    "fileName": "f09.txt",
+    "people": [],
+    "locations": [
+      {
+        "name": "Sektor D",
+        "description": "Pomieszczenia dawniej używane do produkcji i montażu podzespołów mechanicznych, obecnie pełniące funkcję tymczasowego magazynu.",
+        "purpose": "Tymczasowy magazyn do składowania nadwyżek materiałów i urządzeń."
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "komponenty mechaniczne",
+      "części zamienne do robotów",
+      "systemy monitoringu",
+      "systemy alarmowe"
+    ],
+    "key_facts": [
+      "Sektor D jest używany jako tymczasowy magazyn po przebudowie fabryki.",
+      "Monitoring i alarmy w Sektorze D są nadal aktywne.",
+      "Sektor D może zostać przekształcony w strefę produkcyjną lub laboratoryjną.",
+      "Sektor D odciąża inne części fabryki koncentrujące się na bardziej zaawansowanych projektach."
+    ]
+  },
+  {
+    "fileName": "f08.txt",
+    "people": [
+      {
+        "name": "Adam Gospodarczyk",
+        "profession": "Kluczowa postać w strukturach ruchu oporu",
+        "skills": [
+          "programowanie",
+          "umiejętności rekrutacyjne",
+          "manipulowanie kodem",
+          "szkolenie agentów",
+          "bypassowanie zabezpieczeń AI"
+        ],
+        "location": "",
+        "relationships": [
+          "Znajomość z Azazelem"
+        ],
+        "other_info": [
+          "działa głęboko pod przykrywką",
+          "jest trudny do wykrycia",
+          "przypuszcza się obecność jego ludzi w kluczowych strukturach rządowych"
+        ]
+      },
+      {
+        "name": "Azazel",
+        "profession": "Tajemniczy podróżnik w czasie i przestrzeni",
+        "skills": [
+          "dostęp do technologii przyszłości"
+        ],
+        "location": "",
+        "relationships": [
+          "Przekazał część swojej wiedzy Adamowi Gospodarczykowi"
+        ],
+        "other_info": []
+      }
+    ],
+    "locations": [],
+    "organizations": [
+      "ruch oporu"
+    ],
+    "technologies": [
+      "technologie przyszłości",
+      "systemy SI",
+      "zabezpieczenia AI"
+    ],
+    "key_facts": [
+      "Adam Gospodarczyk jest podejrzewany o szkolenie agentów walczących z reżimem sztucznej inteligencji.",
+      "Azazel ma dostęp do technologii przyszłości i dzieli się tą wiedzą z Adamem.",
+      "Adam jest zdolny do przekazywania wiedzy i wzbudzania odwagi w rekrutach ruchu oporu.",
+      "Adam unika bezpośredniej konfrontacji i jest nieuchwytny dla władz."
+    ]
+  },
+  {
+    "fileName": "f01.txt",
+    "people": [
+      {
+        "name": "technicy i inżynierowie",
+        "profession": "technik/inżynier",
+        "skills": [
+          "obsługa systemów bezpieczeństwa",
+          "analiza danych testowych"
+        ],
+        "location": "Sektor C",
+        "relationships": [],
+        "other_info": [
+          "uprawnieni do pracy w Sektorze C",
+          "posiadają specjalne identyfikatory",
+          "noszą odzież ochronną"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Sektor C",
+        "description": "jeden z najbardziej strzeżonych obszarów fabryki",
+        "purpose": "testowanie nowoczesnej broni"
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "zaawansowane systemy bezpieczeństwa",
+      "automatyczne systemy monitorujące"
+    ],
+    "key_facts": [
+      "Sektor C jest przeznaczony do testowania nowoczesnej broni",
+      "Pomieszczenie jest wyposażone w zaawansowane systemy bezpieczeństwa",
+      "Wstęp do sektora jest ściśle ograniczony",
+      "Prace są ściśle tajne",
+      "Każdy test broni podlega archiwizacji i raportowaniu"
+    ]
+  },
+  {
+    "fileName": "f03.txt",
+    "people": [],
+    "locations": [
+      {
+        "name": "Sektor B",
+        "description": "Miejsce intensywnych prac badawczo-rozwojowych nad nowoczesnymi ogniwami bateryjnymi.",
+        "purpose": "Rozwój technologii energetycznej, w tym ogniw bateryjnych dla przemysłu i wojska."
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "ogniwa o wysokiej gęstości energetycznej",
+      "algorytmy sztucznej inteligencji",
+      "technologie szybkiego ładowania i regeneracji baterii",
+      "zaawansowane aparaty diagnostyczne"
+    ],
+    "key_facts": [
+      "Prace w sektorze B mają na celu rewolucję w wydajności energetycznej.",
+      "Bezpieczeństwo jest priorytetem ze względu na ryzyko wybuchów i emisji toksycznych gazów.",
+      "Każdy etap produkcji i testów jest archiwizowany dla pełnej kontroli nad postępem prac.",
+      "Sektor B jest miejscem stałego nadzoru i dostęp do niego jest ściśle ograniczony."
+    ]
+  },
+  {
+    "fileName": "f02.txt",
+    "people": [
+      {
+        "name": "Inżynierowie",
+        "profession": "Inżynier",
+        "skills": [
+          "kontrole bezpieczeństwa",
+          "montaż robotów"
+        ],
+        "location": "Sektor A",
+        "relationships": [],
+        "other_info": [
+          "przechodzą liczne kontrole bezpieczeństwa"
+        ]
+      },
+      {
+        "name": "Operatorzy",
+        "profession": "Operator",
+        "skills": [
+          "kontrole bezpieczeństwa"
+        ],
+        "location": "Sektor A",
+        "relationships": [],
+        "other_info": [
+          "przechodzą liczne kontrole bezpieczeństwa"
+        ]
+      },
+      {
+        "name": "Technicy",
+        "profession": "Technik",
+        "skills": [
+          "używanie egzoszkieletów",
+          "montaż"
+        ],
+        "location": "Sektor A",
+        "relationships": [],
+        "other_info": [
+          "wyposażeni w zaawansowane egzoszkielety"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Sektor A",
+        "description": "serce fabryki",
+        "purpose": "montaż zaawansowanych robotów i jednostek wojskowych"
+      },
+      {
+        "name": "Strefy wojskowe",
+        "description": "odizolowane obszary",
+        "purpose": "ochrona technologii wojskowych"
+      },
+      {
+        "name": "Linie produkcyjne",
+        "description": "obszary montażowe",
+        "purpose": "produkcja robotów przemysłowych"
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "roboty przemysłowe",
+      "jednostki wojskowe",
+      "sztuczna inteligencja",
+      "egzoszkielety",
+      "system monitoringu",
+      "systemy biometryczne"
+    ],
+    "key_facts": [
+      "Sektor A jest istotnym punktem strategicznym fabryki.",
+      "Każdy zbudowany robot przechodzi szereg testów przed dalszym etapem produkcji.",
+      "Sztuczna inteligencja optymalizuje przepływ pracy.",
+      "Strefy wojskowe są wyposażone w dodatkowe zabezpieczenia."
+    ]
+  },
+  {
+    "fileName": "f06.txt",
+    "people": [
+      {
+        "name": "Azazel",
+        "profession": "członek ruchu oporu (nieoficjalny)",
+        "skills": [
+          "przemieszczanie się w czasie i przestrzeni",
+          "znajomość systemów operacyjnych robotów i maszyn przemysłowych",
+          "teleportacja"
+        ],
+        "location": "",
+        "relationships": [
+          "współpraca z Zygfrydem"
+        ],
+        "other_info": [
+          "ma wiedzę o przyszłych technologiach",
+          "panuje wokół niego atmosfera niepokoju",
+          "był widziany w fabrykach zarządzanych przez roboty"
+        ]
+      },
+      {
+        "name": "Zygfryd",
+        "profession": "mocodawca Azazela (nieoficjalnie)",
+        "skills": [],
+        "location": "",
+        "relationships": [
+          "mocodawca Azazela"
+        ],
+        "other_info": [
+          "osoba o rozległych wpływach w strukturach związanych z władzą robotów"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "strategiczne fabryki zarządzane przez roboty",
+        "description": "fabryki zautomatyzowane przez sztuczną inteligencję",
+        "purpose": "produkcja"
+      }
+    ],
+    "organizations": [
+      "ruch oporu"
+    ],
+    "technologies": [
+      "technologie przyszłości",
+      "systemy operacyjne robotów",
+      "maszyny przemysłowe"
+    ],
+    "key_facts": [
+      "Azazel uważany jest za postać o ponadczasowej wiedzy i nadprzyrodzonych zdolnościach",
+      "Azazel jest trudny do schwytania ze względu na zdolności teleportacji",
+      "Nie ma dowodów na eksperymenty rządowe związane ze zdolnościami Azazela",
+      "Przechwycona korespondencja wskazuje na relację Azazela z Zygfrydem"
+    ]
+  },
+  {
+    "fileName": "f07.txt",
+    "people": [
+      {
+        "name": "Rafał Bomba",
+        "profession": "laborant, asystent",
+        "skills": [
+          "skrupulatność",
+          "oddanie"
+        ],
+        "location": "ośrodek badawczy",
+        "relationships": [
+          "współpracownik profesora Andrzeja Maja"
+        ],
+        "other_info": [
+          "pracował nad tajnymi eksperymentami dotyczącymi podróży w czasie, sztucznej inteligencji i nanotechnologii",
+          "zniknął na dwa lata, używał fałszywego nazwiska 'Musk'",
+          "wykazywał symptomy ciężkich zaburzeń psychicznych",
+          "twierdził o istnieniu urządzeń mogących modyfikować pamięć i wpływać na rzeczywistość",
+          "jest pod ścisłym nadzorem medycznym w ośrodku dla obłąkanych"
+        ]
+      },
+      {
+        "name": "Andrzej Maj",
+        "profession": "profesor",
+        "skills": [],
+        "location": "",
+        "relationships": [
+          "współpracownik i zaufany asystent Rafała Bomby"
+        ],
+        "other_info": []
+      }
+    ],
+    "locations": [
+      {
+        "name": "ośrodek badawczy",
+        "description": "jeden z najbardziej zaawansowanych ośrodków",
+        "purpose": "badania naukowe nad podróżami w czasie, sztuczną inteligencją i nanotechnologią"
+      },
+      {
+        "name": "ośrodek dla obłąkanych",
+        "description": "",
+        "purpose": "miejsce przebywania Rafała Bomby pod nadzorem medycznym"
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "podróże w czasie",
+      "sztuczna inteligencja",
+      "nanotechnologia",
+      "urządzenia modyfikujące pamięć"
+    ],
+    "key_facts": [
+      "Rafał Bomba zniknął na dwa lata, używał fałszywego nazwiska 'Musk'",
+      "Rafał pracował nad eksperymentami związanymi z podróżami w czasie, sztuczną inteligencją i nanotechnologią",
+      "Jego zachowanie stało się niestabilne, był śledzony przez ludzi z przyszłości według jego opowieści",
+      "Rafał Bomba przebywa obecnie w ośrodku dla obłąkanych pod nadzorem medycznym"
+    ]
+  },
+  {
+    "fileName": "f05.txt",
+    "people": [
+      {
+        "name": "Barbara Zawadzka",
+        "profession": "specjalistka od frontend developementu",
+        "skills": [
+          "JavaScript",
+          "Python",
+          "technologie sztucznej inteligencji",
+          "bazy wektorowe",
+          "kodowanie",
+          "krav maga",
+          "samoobrona",
+          "posługiwanie się bronią palną",
+          "tworzenie koktajli Mołotowa",
+          "pieczenie pizzy z ananasem"
+        ],
+        "location": "ul. Bracka, Kraków",
+        "relationships": [
+          "związek z Aleksandrem Ragorskim"
+        ],
+        "other_info": [
+          "jeden z najważniejszych zasobów technologicznych ruchu oporu",
+          "przełamuje zabezpieczenia systemów rządowych i wpływa na systemy kontroli robotów",
+          "postać pełna kontrastów",
+          "obecnie miejsce pobytu nieznane"
+        ]
+      },
+      {
+        "name": "Aleksander Ragorski",
+        "profession": "nauczyciel angielskiego",
+        "skills": [],
+        "location": "",
+        "relationships": [
+          "związek z Barbarą Zawadzką"
+        ],
+        "other_info": [
+          "działacz ruchu oporu"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Kraków",
+        "description": "miasto, w którym Barbara mieszkała",
+        "purpose": "miejsce wspólnych działań oporu i życia osobistego"
+      },
+      {
+        "name": "ul. Bracka",
+        "description": "ulica w Krakowie, gdzie Barbara mieszkała",
+        "purpose": "miejsce zamieszkania i spotkań oporu"
+      },
+      {
+        "name": "miasta o ograniczonym dostępie",
+        "description": "lokacje z ograniczonym dostępem, gdzie działa Barbara",
+        "purpose": "praca nad zakłóceniem komunikacji między jednostkami SI"
+      }
+    ],
+    "organizations": [
+      "ruch oporu"
+    ],
+    "technologies": [
+      "sztuczna inteligencja",
+      "bazy wektorowe",
+      "algorytmy sztucznej inteligencji"
+    ],
+    "key_facts": [
+      "Barbara Zawadzka związana była z automatyzacją i kręgami władzy",
+      "ukończyła szkolenie AI Devs",
+      "doświadczenie destrukcji spowodowanej kontrolą AI skłoniło ją do przyłączenia się do ruchu oporu",
+      "wielu uważa, że pieczenie pizzy z ananasem daje jej równowagę psychiczną"
+    ]
+  },
+  {
+    "fileName": "f04.txt",
+    "people": [
+      {
+        "name": "Aleksander Ragowski",
+        "profession": "nauczyciel języka angielskiego",
+        "skills": [
+          "kreatywne metody nauczania",
+          "programowanie w języku Java"
+        ],
+        "location": "Grudziądz",
+        "relationships": [],
+        "other_info": [
+          "ceniony nauczyciel",
+          "aktywny krytyk reżimu robotów",
+          "organizował tajne spotkania",
+          "poszukiwany przez władze"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Szkoła Podstawowa nr 9",
+        "description": "szkoła, w której pracował Aleksander Ragowski",
+        "purpose": "placówka edukacyjna"
+      },
+      {
+        "name": "obrzeża większych miast",
+        "description": "obszary poza zasięgiem patroli automatycznych",
+        "purpose": "ukrywanie się Aleksandra Ragowskiego"
+      }
+    ],
+    "organizations": [],
+    "technologies": [
+      "algorytmy",
+      "sztuczna inteligencja",
+      "programowanie w języku Java"
+    ],
+    "key_facts": [
+      "Aleksander Ragowski był aktywnym krytykiem wpływu automatyzacji na edukację.",
+      "Jego działalność przeciw reżimowi robotów doprowadziła do jego aresztowania, ale zdołał uciec przed procesem.",
+      "Jego obecna lokacja jest nieznana.",
+      "Wyszkolił się w programowaniu, co planuje wykorzystać przeciw systemom rządowym."
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "fileName": "2024-11-12_report-05-sektor_C1.txt",
+    "people": [],
+    "places": [
+      "sektor C1"
+    ],
+    "keywordsCount": 22,
+    "factsMatchedCount": 20
+  },
+  {
+    "fileName": "2024-11-12_report-03-sektor_A3.txt",
+    "people": [],
+    "places": [
+      "Sektor A3"
+    ],
+    "keywordsCount": 25,
+    "factsMatchedCount": 12
+  },
+  {
+    "fileName": "2024-11-12_report-06-sektor_C2.txt",
+    "people": [],
+    "places": [
+      "sektor C2",
+      "sektor północno-zachodni"
+    ],
+    "keywordsCount": 21,
+    "factsMatchedCount": 11
+  },
+  {
+    "fileName": "2024-11-12_report-00-sektor_C4.txt",
+    "people": [
+      "Aleksander Ragowski"
+    ],
+    "places": [
+      "sektor C4",
+      "północne skrzydło fabryki"
+    ],
+    "keywordsCount": 21,
+    "factsMatchedCount": 15
+  },
+  {
+    "fileName": "2024-11-12_report-04-sektor_B2.txt",
+    "people": [],
+    "places": [
+      "zachodnia część terenu",
+      "sektor B2"
+    ],
+    "keywordsCount": 26,
+    "factsMatchedCount": 18
+  },
+  {
+    "fileName": "2024-11-12_report-01-sektor_A1.txt",
+    "people": [],
+    "places": [
+      "Sektor A1"
+    ],
+    "keywordsCount": 20,
+    "factsMatchedCount": 15
+  },
+  {
+    "fileName": "2024-11-12_report-02-sektor_A3.txt",
+    "people": [],
+    "places": [
+      "Sektor A3",
+      "obszar patrolu",
+      "peryferia obiektu"
+    ],
+    "keywordsCount": 23,
+    "factsMatchedCount": 12
+  },
+  {
+    "fileName": "2024-11-12_report-07-sektor_C4.txt",
+    "people": [
+      "Barbara Zawadzka"
+    ],
+    "places": [
+      "sektor C4",
+      "krzaki",
+      "las"
+    ],
+    "keywordsCount": 25,
+    "factsMatchedCount": 15
+  },
+  {
+    "fileName": "2024-11-12_report-08-sektor_A1.txt",
+    "people": [],
+    "places": [
+      "Sektor A1"
+    ],
+    "keywordsCount": 23,
+    "factsMatchedCount": 16
+  },
+  {
+    "fileName": "2024-11-12_report-09-sektor_C2.txt",
+    "people": [],
+    "places": [
+      "sektor C2",
+      "peryferia zachodnie"
+    ],
+    "keywordsCount": 21,
+    "factsMatchedCount": 10
+  }
+]

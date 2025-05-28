@@ -1,0 +1,429 @@
+[
+  {
+    "fileName": "2024-11-12_report-05-sektor_C1.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "05",
+      "sector": "C1"
+    },
+    "content": "Godzina 04:02. Bez wykrycia aktywności organicznej lub technologicznej. Sensor dźwiękowy i detektory ruchu w pełnej gotowości. Bez niepokojących sygnałów w trakcie patrolu. Kontynuuję monitorowanie.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "sektor C1"
+    ],
+    "matchedFacts": [
+      "Na podstawie dostarczonego raportu oraz bazy wiedzy analizuję następujące fakty:",
+      "### Osoby",
+      "- Brak wykrytych osób w raporcie, dlatego na podstawie raportu nie znajduję odpowiednich informacji o osobach do zaznaczenia zgodnie z instrukcją.",
+      "### Miejsca",
+      "1. **Miejsce: Sektor C - jeden z najbardziej strzeżonych obszarów fabryki**",
+      "- Fakt: Sektor C jest przeznaczony do testowania nowoczesnej broni.",
+      "- Fakt: Pomieszczenie jest wyposażone w zaawansowane systemy bezpieczeństwa.",
+      "- Fakt: Wstęp do sektora jest ściśle ograniczony.",
+      "- Fakt: Prace są ściśle tajne.",
+      "- Fakt: Każdy test broni podlega archiwizacji i raportowaniu.",
+      "### Technologie",
+      "1. **Technologie powiązane z raportem:**",
+      "- Zaawansowane systemy bezpieczeństwa",
+      "- Automatyczne systemy monitorujące",
+      "### Fakty",
+      "- Brak bezpośrednich faktów o osobach z raportu, ale fakt dla miejsca Sektor C dotyczący zaawansowanych systemów bezpieczeństwa znalazł powiązanie w danych z bazy wiedzy.",
+      "### Dodatkowe informacje",
+      "- **Technologie ogólnie z bazy w kontekście raportu:**",
+      "- Systemy alarmowe są wspomniane w innych sektorach co sugeruje, że podobne technologie mogą być częścią naturalnego wysiłku zachowującego bezpieczeństwo w Sektorze C, ale brakuje bezpośredniego odniesienia w dostarczonym fragmencie bazy wiedzy czy raporcie.",
+      "Na podstawie powyższej analizy, brak jest informacji o osobach z raportu w bazie wiedzy, a skoncentrowanie się jest na sektorze i technologii opisanej w raporcie. Wszelkie wskazówki dotyczące ewentualnych osób, które mogą być powiązane, nie znajdują bezpośredniego potwierdzenia w kontekście konkretnych danych z raportu."
+    ],
+    "polishKeywords": [
+      "sektor C1",
+      "bezpieczeństwo",
+      "monitorowanie",
+      "patrol",
+      "systemy bezpieczeństwa",
+      "detektory ruchu",
+      "sensor dźwiękowy",
+      "obserwacja",
+      "raport",
+      "04:02"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-03-sektor_A3.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "03",
+      "sector": "A3"
+    },
+    "content": "Godzina 01:30. Przebieg patroli nocnych na poziomie ściśle monitorowanym. Czujniki pozostają aktywne, a wytyczne dotyczące wykrywania życia organicznego – bez rezultatów. Stan patrolu bez zakłóceń.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "Sektor A3"
+    ],
+    "matchedFacts": [
+      "Raport dotyczący Sektora A3 nie zawiera konkretnych osób ani wskazania profesji w bezpośredni sposób do żadnej osoby. Tym samym nie ma konieczności weryfikacji zawodów/profesji ani przypisania oznaczeń dla nauczycieli czy programistów w odniesieniu do treści raportu. Z tego powodu skupimy się na innych faktach dotyczących miejsc i technologii.",
+      "Poniżej znajdują się powiązane fakty, które mogłyby mieć związek z raportem:",
+      "### Miejsce:",
+      "- **Sektor A (f02.txt)** - Serce fabryki, istotny punkt strategiczny.",
+      "### Technologie:",
+      "- **System monitoringu (f02.txt, f09.txt)** - Systemy monitorujące są wspomniane w raporcie oraz opisane w sektorach z dokumentów jako aktywne systemy wykrywania i monitorowania.",
+      "- **Sztuczna inteligencja (f02.txt, f05.txt, f07.txt)** - AI jest powszechnie stosowana w fabryce, także w systemach bezpieczeństwa.",
+      "- **Systemy bezpieczeństwa (f01.txt, f02.txt)** - Choć nie bezpośrednio opisane w treści raportu, niektóre sektory jak Sektor C zawierają zaawansowane systemy bezpieczeństwa, które mogą być podobne do używanych w Sektorze A3.",
+      "### Fakty:",
+      "- **Sektor A (f02.txt)** - istotny punkt strategiczny fabryki, co oznacza, że monitorowanie i patrole mogą być elementem szerszych środków bezpieczeństwa w takich miejscach.",
+      "- **Systemy monitoringu (f09.txt)** - Monitoring i alarmy są nadal aktywne, jak wspomniano w opisie innego sektora, co odpowiada treści raportu.",
+      "Raport nie zawiera bezpośrednich informacji związanych z osobami, dlatego nie możemy zaaplikować Twoich specjalnych wymagań dotyczących osób/manier zawodowych z asocjacjami zawodu. Jeśli jest coś, co wymagałoby dalszej analizy lub poszukiwania, proszę dać mi znać!"
+    ],
+    "polishKeywords": [
+      "sektor A3",
+      "patrol",
+      "monitoring",
+      "czujniki",
+      "sztuczna inteligencja",
+      "systemy bezpieczeństwa",
+      "technologie",
+      "sensor",
+      "raport",
+      "strategiczny punkt",
+      "fabryka"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-06-sektor_C2.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "06",
+      "sector": "C2"
+    },
+    "content": "Godzina 22:50. Sektor północno-zachodni spokojny, stan obszaru stabilny. Skanery temperatury i ruchu wskazują brak wykrycia. Jednostka w pełni operacyjna, powracam do dalszego patrolu.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "sektor C2",
+      "sektor północno-zachodni"
+    ],
+    "matchedFacts": [
+      "Na podstawie przedstawionego raportu z Sektora C2 z dnia 2024-11-12 oraz dostępnej bazy faktów, poniżej znajduje się lista powiązanych faktów:",
+      "**Osoby:**",
+      "Z raportu wynika, że nie wykryto żadnych osób, więc brak odpowiednich informacji do podania w tej sekcji.",
+      "**Miejsca:**",
+      "- **Miejsce:** Sektor C - jeden z najbardziej strzeżonych obszarów fabryki",
+      "**Fakt:** Sektor C jest przeznaczony do testowania nowoczesnej broni | Pomieszczenie jest wyposażone w zaawansowane systemy bezpieczeństwa | Wstęp do sektora jest ściśle ograniczony | Prace są ściśle tajne | Każdy test broni podlega archiwizacji i raportowaniu",
+      "**Technologie:**",
+      "- **Technologie:** zaawansowane systemy bezpieczeństwa, automatyczne systemy monitorujące",
+      "**Fakty:**",
+      "- **Fakt:** Sektor C jest przeznaczony do testowania nowoczesnej broni | Pomieszczenie jest wyposażone w zaawansowane systemy bezpieczeństwa | Wstęp do sektora jest ściśle ograniczony | Prace są ściśle tajne | Każdy test broni podlega archiwizacji i raportowaniu.",
+      "W raporcie nie ma osób, które można przypisywać do zawodów lub umiejętności, stąd brak osobnych odnotowanych osób. Brak także bezpośrednich technologii wymienionych w raporcie, które można porównać z bazą wiedzy, oprócz wspomnianych systemów bezpieczeństwa i monitoringu."
+    ],
+    "polishKeywords": [
+      "sektor C2",
+      "sektor północno-zachodni",
+      "stan stabilny",
+      "patrol",
+      "zaawansowane systemy bezpieczeństwa",
+      "automatyczne systemy monitorujące",
+      "brak wykrycia",
+      "ochrona",
+      "bezpieczeństwo",
+      "temperatura",
+      "ruch",
+      "system monitoringu"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-00-sektor_C4.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "00",
+      "sector": "C4"
+    },
+    "content": "Godzina 22:43. Wykryto jednostkę organiczną w pobliżu północnego skrzydła fabryki. Osobnik przedstawił się jako Aleksander Ragowski. Przeprowadzono skan biometryczny, zgodność z bazą danych potwierdzona. Jednostka przekazana do działu kontroli. Patrol kontynuowany.",
+    "peopleInvolved": [
+      "Aleksander Ragowski"
+    ],
+    "placesInvolved": [
+      "sektor C4",
+      "północne skrzydło fabryki"
+    ],
+    "matchedFacts": [
+      "Oto lista powiązanych faktów z raportu:",
+      "Osoba:",
+      "- Aleksander Ragowski - nauczyciel",
+      "Miejsce:",
+      "- Sektor C - Jeden z najbardziej strzeżonych obszarów fabryki",
+      "- Fakty: Wyposażony w zaawansowane systemy bezpieczeństwa, przeznaczony do testowania nowoczesnej broni, wstęp ściśle ograniczony.",
+      "Technologie:",
+      "- zaawansowane systemy bezpieczeństwa",
+      "- automatyczne systemy monitorujące",
+      "- skan biometryczny (choć należy zaznaczyć, że skan biometryczny został jedynie wykonany)",
+      "Fakt:",
+      "- Aleksander Ragowski był aktywnym krytykiem wpływu automatyzacji na edukację, a jego działalność przeciw reżimowi robotów doprowadziła do jego aresztowania, z którego jednak zdołał uciec.",
+      "- Jego obecna lokalizacja była nieznana do momentu wykrycia w sektorze C4.",
+      "- Przeprowadzono skan biometryczny w celu weryfikacji tożsamości wobec bazy danych.",
+      "- Przekazanie do działu kontroli oznacza formalne schwytanie/zatrzymanie osoby."
+    ],
+    "polishKeywords": [
+      "schwytanie",
+      "nauczyciel",
+      "Aleksander Ragowski",
+      "sektor C4",
+      "północne skrzydło",
+      "zaawansowane systemy bezpieczeństwa",
+      "patrol",
+      "fabryka",
+      "biometryczny",
+      "kontrola"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-04-sektor_B2.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "04",
+      "sector": "B2"
+    },
+    "content": "Godzina 23:45. Patroluje zachodnią część terenu; brak anomalii ani odchyleń od normy. Sektor bezpieczny, wszystkie kanały komunikacyjne czyste. Przechodzę do następnego punktu.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "zachodnia część terenu",
+      "sektor B2"
+    ],
+    "matchedFacts": [
+      "Na podstawie podanego raportu i bazy faktów:",
+      "RAPORT",
+      "- Miejsca: zachodnia część terenu, sektor B2",
+      "W związku z informacjami z bazy faktów:",
+      "1. **Osoby w raporcie:**",
+      "- W raporcie nie wykryto żadnych osób, więc nie ma bezpośrednich powiązań do analizy zawodów/profesji czy programistycznych umiejętności.",
+      "2. **Miejsca powiązane z raportem:**",
+      "- W bazie faktów nie ma bezpośrednich informacji o sektorze B2. Jednak sektor B jest opisany we wprowadzeniu do Pliku f03.txt:",
+      "- Miejsce: Sektor B - miejsce intensywnych prac badawczo-rozwojowych nad nowoczesnymi ogniwami bateryjnymi.",
+      "- Fakt związany z sektorem B: Prace w sektorze B mają na celu rewolucję w wydajności energetycznej. Bezpieczeństwo jest priorytetem ze względu na ryzyko wybuchów i emisji toksycznych gazów. Każdy etap produkcji i testów jest archiwizowany dla pełnej kontroli nad postępem prac. Sektor B jest miejscem stałego nadzoru i dostęp do niego jest ściśle ograniczony.",
+      "3. **Technologie powiązane z raportem:**",
+      "- Raport wspomina o \"kanałach komunikacyjnych\" jako czystych.",
+      "- Technologie związane z miejscem w Pliku f03.txt:",
+      "- Technologie: ogniwa o wysokiej gęstości energetycznej, algorytmy sztucznej inteligencji, technologie szybkiego ładowania i regeneracji baterii, zaawansowane aparaty diagnostyczne.",
+      "Podsumowując listę powiązanych faktów:",
+      "- Miejsce: Sektor B - miejsce intensywnych prac badawczo-rozwojowych nad nowoczesnymi ogniwami bateryjnymi.",
+      "- Technologie: ogniwa o wysokiej gęstości energetycznej, algorytmy sztucznej inteligencji, technologie szybkiego ładowania i regeneracji baterii, zaawansowane aparaty diagnostyczne.",
+      "- Fakt: Prace w sektorze B mają na celu rewolucję w wydajności energetycznej. Bezpieczeństwo jest priorytetem ze względu na ryzyko wybuchów i emisji toksycznych gazów. Każdy etap produkcji i testów jest archiwizowany dla pełnej kontroli nad postępem prac. Sektor B jest miejscem stałego nadzoru i dostęp do niego jest ściśle ograniczony."
+    ],
+    "polishKeywords": [
+      "sektor B2",
+      "zachodnia część terenu",
+      "bezpieczeństwo",
+      "patrol",
+      "komunikacyjne kanały",
+      "brak anomalii",
+      "23:45",
+      "bezpieczny"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-01-sektor_A1.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "01",
+      "sector": "A1"
+    },
+    "content": "Godzina 03:26. Wstępny alarm wykrycia – ruch organiczny. Analiza wizualna i sensoryczna wykazała obecność lokalnej zwierzyny leśnej. Fałszywy alarm. Obszar bezpieczny, wracam na trasę patrolu. Spokój przywrócony.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "Sektor A1"
+    ],
+    "matchedFacts": [
+      "Na podstawie treści raportu i dostarczonej bazy faktów nie znajduję bezpośrednich odniesień do konkretnych osób, miejsc ani technologii z raportu. Oto szczegółowa analiza:",
+      "### Osoby",
+      "- **Osoby w raporcie**: Brak",
+      "- Brak wskazań lub kontekstu, który pozwoliłby na powiązanie jakiejkolwiek osoby z raportu z bazą faktów. W raporcie wyraźnie stwierdzono brak wykrytych osób.",
+      "### Miejsca",
+      "- **W raporcie**: Sektor A1",
+      "- **W bazie faktów**:",
+      "- Plik: f02.txt",
+      "- **Miejsce**: Sektor A - serce fabryki",
+      "- **Fakt**: Sektor A jest istotnym punktem strategicznym fabryki.",
+      "### Technologie",
+      "- Brak konkretnych technologii wymienionych w raporcie, które są bezpośrednio powiązane z bazą faktów. W raporcie wspomniano o analizie wizualnej i sensorycznej, jednak nie ma zbieżności z technologiami szczegółowo opisanymi w bazie.",
+      "### Fakty",
+      "- W treści raportu stwierdzono, że alarm był fałszywy i że wykryto jedynie lokalną zwierzynę leśną. Nie ma bezpośredniego połączenia z faktami z bazy danych.",
+      "Podsumowując, jedyny bezpośredni związek z raportem to odniesienie do Sektora A1 jako części Sektora A, który jest ważnym obszarem strategicznym w fabryce. Inne sekcje raportu dotyczące technologii czy osób nie mają bezpośredniego odzwierciedlenia w dostarczonej bazie faktów."
+    ],
+    "polishKeywords": [
+      "zwierzęta",
+      "fałszywy alarm",
+      "obszar bezpieczny",
+      "sektor A1",
+      "patrol",
+      "spokój"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-02-sektor_A3.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "02",
+      "sector": "A3"
+    },
+    "content": "Godzina 02:15. Obszar patrolu nocnego cichy, bez wykrycia aktywności organicznej ani mechanicznej. Prowadzony monitoring peryferii obiektu. Kontynuacja zadań.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "Sektor A3",
+      "obszar patrolu",
+      "peryferia obiektu"
+    ],
+    "matchedFacts": [
+      "Na podstawie analizy raportu bezpieczeństwa i dostępnych informacji z bazy danych, oto lista powiązanych faktów:",
+      "### Osoby:",
+      "- W raporcie nie ma wymienionych osób. Nie znajdują się tam niczyje nazwiska ani profesje bezpośrednio w treści raportu.",
+      "### Miejsca:",
+      "- **Miejsce: Sektor A** - serce fabryki",
+      "- *Fakt:* Sektor A jest istotnym punktem strategicznym fabryki. Każdy zbudowany robot przechodzi szereg testów przed dalszym etapem produkcji. Sztuczna inteligencja optymalizuje przepływ pracy. Strefy wojskowe są wyposażone w dodatkowe zabezpieczenia.",
+      "### Technologie:",
+      "- **Technologie:** systemy monitoringu",
+      "- *Fakt:* Sektor D jest używany jako tymczasowy magazyn po przebudowie fabryki. Monitoring i alarmy w Sektorze D są nadal aktywne. Sektor D odciąża inne części fabryki koncentrujące się na bardziej zaawansowanych projektach.",
+      "### Fakty:",
+      "- Obszar patrolu nocnego w Sektorze A3 jest cichy, bez wykrycia aktywności organicznej ani mechanicznej. Prowadzony jest monitoring peryferii obiektu.",
+      "Z raportu wynika, że Sektor A jest monitorowany w nocy, a brak aktywności sugeruje wysoką skuteczność systemów bezpieczeństwa. Sektor D również wykorzystuje systemy monitoringu i alarmowe mimo innego przeznaczenia obecnie. Niestety, w raporcie nie ma wzmianki bezpośredniej nazwy osoby, więc brak dodatkowych powiązań z osobami wymienionymi w bazie faktów."
+    ],
+    "polishKeywords": [
+      "Sektor A3",
+      "patrol nocny",
+      "monitoring",
+      "peryferie",
+      "dodatkowe zabezpieczenia",
+      "fabryka",
+      "strategiczny punkt",
+      "systemy monitoringu",
+      "bez aktywności",
+      "bez osób"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-07-sektor_C4.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "07",
+      "sector": "C4"
+    },
+    "content": "Godzina 00:11. Czujniki dźwięku wykryły ultradźwiękowy sygnał, pochodzenie: nadajnik ukryty w zielonych krzakach, nieopodal lasu. Przeprowadzono analizę obiektu. Analiza odcisków palców wskazuje osobę o imieniu Barbara Zawadzka, skorelowano z bazą urodzeń. Nadajnik przekazany do działu śledczego. Obszar zabezpieczony, patrol zakończony bez dalszych incydentów.\n",
+    "peopleInvolved": [
+      "Barbara Zawadzka"
+    ],
+    "placesInvolved": [
+      "sektor C4",
+      "krzaki",
+      "las"
+    ],
+    "matchedFacts": [
+      "### Powiązane Fakty",
+      "#### Osoby",
+      "- **Barbara Zawadzka - specjalistka od frontend developmentu, programista JavaScript, programista Python**",
+      "- Związana była z automatyzacją i kręgami władzy.",
+      "- Ukończyła szkolenie AI Devs.",
+      "- Doświadczenie destrukcji spowodowanej kontrolą AI skłoniło ją do przyłączenia się do ruchu oporu.",
+      "#### Miejsca",
+      "- **Sektor C4** - szczegółowe informacje nie są dostępne w bazie faktów.",
+      "- **Las** - szczegółowe informacje nie są dostępne w bazie faktów.",
+      "- **Krzaki** - zabudowania lub osłona roślinna w pobliżu lasu; szczegółowe informacje nie są dostępne w bazie faktów.",
+      "#### Technologie",
+      "- **Czujniki dźwięku, ultradźwiękowy sygnał, nadajnik** - szczegółowe informacje nie są dostępne w bazie faktów.",
+      "#### Fakty",
+      "- Nadajnik przekazany do działu śledczego = schwytanie/zatrzymanie.",
+      "- Obszar zabezpieczony, patrol zakończony bez dalszych incydentów."
+    ],
+    "polishKeywords": [
+      "Barbara Zawadzka",
+      "JavaScript",
+      "programista",
+      "odciski palców",
+      "sektor C4",
+      "czujniki dźwięku",
+      "ultradźwięki",
+      "nadajnik",
+      "las",
+      "krzaki",
+      "analiza",
+      "śledczy"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-08-sektor_A1.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "08",
+      "sector": "A1"
+    },
+    "content": "Godzina 01:00. Monitoring obszaru patrolowego: całkowity brak ruchu. Względna cisza, czujniki nie wykazały aktywności. Kontynuuję obserwację terenu według wyznaczonych wytycznych.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "Sektor A1"
+    ],
+    "matchedFacts": [
+      "Na podstawie raportu dotyczącego Sektora A1 oraz dostępnej bazy faktów, oto lista pasujących informacji:",
+      "Miejsca:",
+      "- Miejsce: Sektor A - serce fabryki",
+      "- Fakt: Sektor A jest istotnym punktem strategicznym fabryki.",
+      "- Fakt: Każdy zbudowany robot przechodzi szereg testów przed dalszym etapem produkcji.",
+      "- Fakt: Sztuczna inteligencja optymalizuje przepływ pracy.",
+      "- Fakt: Strefy wojskowe są wyposażone w dodatkowe zabezpieczenia.",
+      "Technologie:",
+      "- Technologie: systemy monitoringu, automatyczne systemy monitorujące",
+      "- Fakt: Sektor C jest przeznaczony do testowania nowoczesnej broni.",
+      "- Fakt: Pomieszczenie jest wyposażone w zaawansowane systemy bezpieczeństwa.",
+      "- Fakt: Wstęp do sektora jest ściśle ograniczony.",
+      "- Fakt: Prace są ściśle tajne.",
+      "- Fakt: Każdy test broni podlega archiwizacji i raportowaniu.",
+      "Brak jest informacji o osobach w treści raportu, zatem ta sekcja pozostaje bez dodatkowych wpisów.",
+      "Jeżeli natkniesz się na dodatkowe konteksty, w których występują nazwiska, imiona czy miejsca, można rozszerzyć analizę o odpowiednie wpisy."
+    ],
+    "polishKeywords": [
+      "monitoring",
+      "cisza",
+      "czujniki",
+      "brak aktywności",
+      "sektor A1",
+      "serce fabryki",
+      "punkt strategiczny",
+      "robot",
+      "testy",
+      "sztuczna inteligencja",
+      "przepływ pracy",
+      "strefy wojskowe",
+      "zabezpieczenia"
+    ]
+  },
+  {
+    "fileName": "2024-11-12_report-09-sektor_C2.txt",
+    "fileNameInfo": {
+      "date": "2024-11-12",
+      "reportNumber": "09",
+      "sector": "C2"
+    },
+    "content": "Godzina 03:45. Patrol na peryferiach zachodnich zakończony. Czujniki nie wykazały żadnych niepokojących sygnałów. Obszar bez anomalii, kończę bieżący cykl i przechodzę do kolejnego sektora.",
+    "peopleInvolved": [],
+    "placesInvolved": [
+      "sektor C2",
+      "peryferia zachodnie"
+    ],
+    "matchedFacts": [
+      "Z analizy raportu oraz bazy faktów wynika, że raport nie zawiera żadnych szczegółowych informacji o osobach. Dlatego nie można zidentyfikować zawodu żadnej osoby na podstawie danego raportu.",
+      "Pełna lista powiązanych faktów dotyczących miejsc i technologii z raportu wygląda następująco:",
+      "### Miejsca:",
+      "1. **Sektor C:**",
+      "- Opis: Jeden z najbardziej strzeżonych obszarów fabryki.",
+      "- Fakt: Sektor C jest przeznaczony do testowania nowoczesnej broni, wyposażony w zaawansowane systemy bezpieczeństwa oraz wstęp do niego jest ściśle ograniczony.",
+      "### Technologie:",
+      "1. **Systemy monitorujące:**",
+      "- Fakt: W sektorze C znajdują się automatyczne systemy monitorujące i zaawansowane systemy bezpieczeństwa, co koreluje z wzmianką o czujnikach i monitorowaniu w raporcie.",
+      "Na podstawie dostępnych informacji nie można powiązać żadnych dodatkowych osób ani technologii. Raport koncentruje się na miejscach i działaniach patrolowych, a brak wykrytych anomalii ukierunkowuje na bezpieczeństwo i monitorowanie, które są związane z zaawansowanymi systemami wykorzystywanymi w sektorze C."
+    ],
+    "polishKeywords": [
+      "sektor C2",
+      "peryferia zachodnie",
+      "patrol",
+      "systemy monitorujące",
+      "bezpieczeństwo",
+      "anomalie",
+      "obserwacja",
+      "raport",
+      "czujniki"
+    ]
+  }
+]
