@@ -1,25 +1,27 @@
-import path from 'path';
+import path from "path";
 import { sql } from "drizzle-orm";
 import { text, integer, sqliteTable } from "drizzle-orm/sqlite-core";
-import { drizzle } from 'drizzle-orm/bun-sqlite';
-import { Database } from 'bun:sqlite';
-import { existsSync } from 'fs';
-import { AlgoliaService } from './AlgoliaService';
-import { VectorService } from './VectorService';
-import { v4 as uuidv4 } from 'uuid';
+import { drizzle } from "drizzle-orm/bun-sqlite";
+import { Database } from "bun:sqlite";
+import { existsSync } from "fs";
+import { AlgoliaService } from "./AlgoliaService";
+import { VectorService } from "./VectorService";
+import { v4 as uuidv4 } from "uuid";
 
-const documents = sqliteTable('documents', {
-  id: integer('id').primaryKey(),
-  uuid: text('uuid').notNull().unique(),
-  name: text('name').notNull(),
-  content: text('content').notNull(),
-  source: text('source').notNull(),
-  indexed: integer('indexed').notNull(),
-  conversation_uuid: text('conversation_uuid').notNull(),
-  type: text('type').notNull(),
-  description: text('description'),
-  created_at: text('created_at').notNull(),
-  updated_at: text('updated_at').notNull(),
+const documents = sqliteTable("documents", {
+  id: integer("id").primaryKey(),
+  uuid: text("uuid").notNull().unique(),
+  name: text("name").notNull(),
+  author: text("author"),
+  content: text("content").notNull(),
+  source: text("source").notNull(),
+  isbn: text("isbn"),
+  indexed: integer("indexed").notNull(),
+  conversation_uuid: text("conversation_uuid").notNull(),
+  type: text("type").notNull(),
+  description: text("description"),
+  created_at: text("created_at").notNull(),
+  updated_at: text("updated_at").notNull(),
 });
 
 export class DatabaseService {
@@ -28,7 +30,7 @@ export class DatabaseService {
   private vectorService: VectorService;
 
   constructor(
-    dbPath: string = 'hybrid/database.db',
+    dbPath: string = "hybrid/database.db",
     algoliaService: AlgoliaService,
     vectorService: VectorService
   ) {
@@ -43,20 +45,20 @@ export class DatabaseService {
     this.vectorService = vectorService;
 
     if (!dbExists) {
-      console.log('Database does not exist. Initializing...');
+      console.log("Database does not exist. Initializing...");
       this.initializeDatabase();
     } else {
-      console.log('Database already exists. Checking for updates...');
+      console.log("Database already exists. Checking for updates...");
       this.initializeDatabase(); // This will add the uuid column if it doesn't exist
     }
   }
 
   private initializeDatabase() {
-
     this.db.run(sql`
       CREATE TABLE IF NOT EXISTS documents (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
+        author TEXT,
         content TEXT NOT NULL,
         source TEXT NOT NULL,
         isbn TEXT,
@@ -72,10 +74,12 @@ export class DatabaseService {
     // Check if uuid column exists
     try {
       this.db.get(sql`SELECT uuid FROM documents LIMIT 1`);
-      console.log('UUID column already exists');
+      console.log("UUID column already exists");
     } catch (error) {
-      console.log('UUID column does not exist. Adding it now...');
-      this.db.run(sql`ALTER TABLE documents ADD COLUMN uuid TEXT NOT NULL DEFAULT ''`);
+      console.log("UUID column does not exist. Adding it now...");
+      this.db.run(
+        sql`ALTER TABLE documents ADD COLUMN uuid TEXT NOT NULL DEFAULT ''`
+      );
     }
 
     // Create a unique index on the uuid column
@@ -122,6 +126,7 @@ export class DatabaseService {
   async insertDocument(document: {
     uuid: string;
     name: string;
+    author?: string;
     content: string;
     source: string;
     isbn?: string; // Make isbn optional
@@ -143,13 +148,13 @@ export class DatabaseService {
       .run();
 
     // Sync to Algolia
-    await this.algoliaService.saveObject('documents', {
+    await this.algoliaService.saveObject("documents", {
       ...document,
       objectID: uuid,
     });
 
     // Sync to Qdrant
-    await this.vectorService.addPoints('documents', [
+    await this.vectorService.addPoints("documents", [
       {
         id: uuid,
         text: `${document.name} (${document.isbn}): ${document.content}`,
@@ -168,7 +173,7 @@ export class DatabaseService {
       source: string;
       isbn?: string; // Make isbn optional
       conversation_uuid: string;
-      type: 'websearch' | 'scrapped' | 'book';
+      type: "websearch" | "scrapped" | "book";
       description?: string;
       indexed?: boolean;
     }>
@@ -184,12 +189,12 @@ export class DatabaseService {
       .run();
 
     // Sync to Algolia
-    await this.algoliaService.partialUpdateObject('documents', uuid, document);
+    await this.algoliaService.partialUpdateObject("documents", uuid, document);
 
     // Sync to Qdrant
     const updatedDoc = await this.getDocumentByUuid(uuid);
     if (updatedDoc) {
-      await this.vectorService.updatePoint('documents', {
+      await this.vectorService.updatePoint("documents", {
         id: uuid,
         text: `${updatedDoc.name} (${updatedDoc.isbn}): ${updatedDoc.content}`,
         metadata: updatedDoc,
@@ -200,21 +205,28 @@ export class DatabaseService {
   }
 
   async deleteDocument(uuid: string) {
-    const result = await this.db.delete(documents).where(sql`uuid = ${uuid}`).run();
+    const result = await this.db
+      .delete(documents)
+      .where(sql`uuid = ${uuid}`)
+      .run();
     // Sync to Algolia
-    await this.algoliaService.deleteObject('documents', uuid);
+    await this.algoliaService.deleteObject("documents", uuid);
     // Sync to Qdrant
-    await this.vectorService.deletePoint('documents', uuid);
+    await this.vectorService.deletePoint("documents", uuid);
 
     return result;
   }
 
   async getDocumentByUuid(uuid: string) {
-    return this.db.select().from(documents).where(sql`uuid = ${uuid}`).get();
+    return this.db
+      .select()
+      .from(documents)
+      .where(sql`uuid = ${uuid}`)
+      .get();
   }
 
   async getAllDocuments() {
-    console.log('Fetching all documents');
+    console.log("Fetching all documents");
     const result = await this.db.select().from(documents).all();
     console.log(`Found ${result.length} documents`);
     return result;
