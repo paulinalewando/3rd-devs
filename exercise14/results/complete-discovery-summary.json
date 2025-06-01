@@ -1,0 +1,31 @@
+{
+  "discovery_timestamp": "2025-05-31T20:58:14.738Z",
+  "total_iterations": 8,
+  "total_people": 11,
+  "total_places": 9,
+  "people": [
+    "ADAM",
+    "ALEKSANDER",
+    "ANDRZEJ",
+    "ARTUR",
+    "AZAZEL",
+    "BARBARA",
+    "DATA**]",
+    "GABRIEL",
+    "GLITCH",
+    "RAFAL",
+    "[**RESTRICTED"
+  ],
+  "places": [
+    "CIECHOCINEK",
+    "ELBLAG",
+    "FROMBORK",
+    "GRUDZIADZ",
+    "HTTPS://C3NTRALA.AG3NTS.ORG/DANE/NA_SMARTFONA.PNG",
+    "KONIN",
+    "KRAKOW",
+    "LUBLIN",
+    "WARSZAWA"
+  ],
+  "source": "Extracted from barbara.txt and iterative API cross-references"
+}

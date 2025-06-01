@@ -1,0 +1,171 @@
+{
+  "people_queries": [
+    {
+      "query": "BARBARA",
+      "timestamp": "2025-05-31T20:58:03.489Z",
+      "result": {
+        "code": 0,
+        "message": "[**RESTRICTED DATA**]"
+      }
+    },
+    {
+      "query": "ALEKSANDER",
+      "timestamp": "2025-05-31T20:58:04.100Z",
+      "result": {
+        "code": 0,
+        "message": "KRAKOW LUBLIN WARSZAWA"
+      }
+    },
+    {
+      "query": "ANDRZEJ",
+      "timestamp": "2025-05-31T20:58:04.651Z",
+      "result": {
+        "code": 0,
+        "message": "WARSZAWA GRUDZIADZ"
+      }
+    },
+    {
+      "query": "RAFAL",
+      "timestamp": "2025-05-31T20:58:05.205Z",
+      "result": {
+        "code": 0,
+        "message": "GRUDZIADZ WARSZAWA LUBLIN"
+      }
+    },
+    {
+      "query": "ADAM",
+      "timestamp": "2025-05-31T20:58:06.905Z",
+      "iteration": 1,
+      "result": {
+        "code": 0,
+        "message": "KRAKOW CIECHOCINEK"
+      }
+    },
+    {
+      "query": "AZAZEL",
+      "timestamp": "2025-05-31T20:58:08.576Z",
+      "iteration": 2,
+      "result": {
+        "code": 0,
+        "message": "GRUDZIADZ WARSZAWA KRAKOW LUBLIN ELBLAG"
+      }
+    },
+    {
+      "query": "DATA**]",
+      "timestamp": "2025-05-31T20:58:09.135Z",
+      "iteration": 2,
+      "error": "HTTP error! status: 400, message: {\n    \"code\": -301,\n    \"message\": \"query should contain only capital letters\"\n}"
+    },
+    {
+      "query": "[**RESTRICTED",
+      "timestamp": "2025-05-31T20:58:09.697Z",
+      "iteration": 2,
+      "error": "HTTP error! status: 400, message: {\n    \"code\": -301,\n    \"message\": \"query should contain only capital letters\"\n}"
+    },
+    {
+      "query": "GABRIEL",
+      "timestamp": "2025-05-31T20:58:10.817Z",
+      "iteration": 3,
+      "result": {
+        "code": 0,
+        "message": "FROMBORK"
+      }
+    },
+    {
+      "query": "ARTUR",
+      "timestamp": "2025-05-31T20:58:12.491Z",
+      "iteration": 5,
+      "result": {
+        "code": 0,
+        "message": "KONIN"
+      }
+    },
+    {
+      "query": "GLITCH",
+      "timestamp": "2025-05-31T20:58:13.678Z",
+      "iteration": 7,
+      "result": {
+        "code": 0,
+        "message": "https://c3ntrala.ag3nts.org/dane/na_smartfona.png"
+      }
+    }
+  ],
+  "places_queries": [
+    {
+      "query": "KRAKOW",
+      "timestamp": "2025-05-31T20:58:05.771Z",
+      "result": {
+        "code": 0,
+        "message": "ALEKSANDER BARBARA ADAM"
+      }
+    },
+    {
+      "query": "WARSZAWA",
+      "timestamp": "2025-05-31T20:58:06.328Z",
+      "result": {
+        "code": 0,
+        "message": "RAFAŁ ALEKSANDER ANDRZEJ"
+      }
+    },
+    {
+      "query": "GRUDZIADZ",
+      "timestamp": "2025-05-31T20:58:07.459Z",
+      "iteration": 1,
+      "result": {
+        "code": 0,
+        "message": "RAFAL AZAZEL"
+      }
+    },
+    {
+      "query": "LUBLIN",
+      "timestamp": "2025-05-31T20:58:08.018Z",
+      "iteration": 1,
+      "result": {
+        "code": 0,
+        "message": "[**RESTRICTED DATA**]"
+      }
+    },
+    {
+      "query": "CIECHOCINEK",
+      "timestamp": "2025-05-31T20:58:10.267Z",
+      "iteration": 2,
+      "result": {
+        "code": 0,
+        "message": "ADAM GABRIEL"
+      }
+    },
+    {
+      "query": "ELBLAG",
+      "timestamp": "2025-05-31T20:58:11.380Z",
+      "iteration": 3,
+      "result": {
+        "code": 0,
+        "message": "BARBARA"
+      }
+    },
+    {
+      "query": "FROMBORK",
+      "timestamp": "2025-05-31T20:58:11.939Z",
+      "iteration": 4,
+      "result": {
+        "code": 0,
+        "message": "GABRIEL ARTUR AZAZEL"
+      }
+    },
+    {
+      "query": "KONIN",
+      "timestamp": "2025-05-31T20:58:13.126Z",
+      "iteration": 6,
+      "result": {
+        "code": 0,
+        "message": "GLITCH"
+      }
+    },
+    {
+      "query": "HTTPS://C3NTRALA.AG3NTS.ORG/DANE/NA_SMARTFONA.PNG",
+      "timestamp": "2025-05-31T20:58:14.236Z",
+      "iteration": 8,
+      "error": "HTTP error! status: 400, message: {\n    \"code\": -301,\n    \"message\": \"query should contain only capital letters\"\n}"
+    }
+  ]
+}

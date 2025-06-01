@@ -1,0 +1,75 @@
+{
+  "extracted_data": {
+    "people": [
+      "BARBARA",
+      "ALEKSANDER",
+      "ANDRZEJ",
+      "RAFAL"
+    ],
+    "places": [
+      "KRAKOW",
+      "WARSZAWA"
+    ]
+  },
+  "api_results": {
+    "people_queries": [
+      {
+        "query": "BARBARA",
+        "timestamp": "2025-05-31T20:58:03.489Z",
+        "result": {
+          "code": 0,
+          "message": "[**RESTRICTED DATA**]"
+        }
+      },
+      {
+        "query": "ALEKSANDER",
+        "timestamp": "2025-05-31T20:58:04.100Z",
+        "result": {
+          "code": 0,
+          "message": "KRAKOW LUBLIN WARSZAWA"
+        }
+      },
+      {
+        "query": "ANDRZEJ",
+        "timestamp": "2025-05-31T20:58:04.651Z",
+        "result": {
+          "code": 0,
+          "message": "WARSZAWA GRUDZIADZ"
+        }
+      },
+      {
+        "query": "RAFAL",
+        "timestamp": "2025-05-31T20:58:05.205Z",
+        "result": {
+          "code": 0,
+          "message": "GRUDZIADZ WARSZAWA LUBLIN"
+        }
+      }
+    ],
+    "places_queries": [
+      {
+        "query": "KRAKOW",
+        "timestamp": "2025-05-31T20:58:05.771Z",
+        "result": {
+          "code": 0,
+          "message": "ALEKSANDER BARBARA ADAM"
+        }
+      },
+      {
+        "query": "WARSZAWA",
+        "timestamp": "2025-05-31T20:58:06.328Z",
+        "result": {
+          "code": 0,
+          "message": "RAFAŁ ALEKSANDER ANDRZEJ"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "extraction_timestamp": "2025-05-31T20:58:06.830Z",
+    "people_extracted": 4,
+    "places_extracted": 2,
+    "people_found_in_api": 4,
+    "places_found_in_api": 2
+  }
+}
