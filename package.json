@@ -85,7 +85,7 @@
     "exercise12": "bun run exercise12/app.ts",
     "exercise13": "bun run exercise13/app.ts",
     "exercise14": "bun run exercise14/app.ts",
-    "exercise14-process": "bun run exercise14/app.ts --process-barbara"
+    "exercise15": "bun run exercise15/app.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"

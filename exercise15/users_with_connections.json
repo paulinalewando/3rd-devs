@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "1",
+    "username": "Adrian",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-12",
+    "connections": {
+      "connected_users": [
+        "5",
+        "20",
+        "54"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "2",
+    "username": "Monika",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-29",
+    "connections": {
+      "connected_users": [
+        "14",
+        "45",
+        "4",
+        "24",
+        "83"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "3",
+    "username": "Azazel",
+    "access_level": "removed",
+    "is_active": "0",
+    "lastlog": "2026-11-05",
+    "connections": {
+      "connected_users": [
+        "6",
+        "31",
+        "77",
+        "28",
+        "31",
+        "71",
+        "73"
+      ],
+      "connection_count": 7
+    }
+  },
+  {
+    "id": "4",
+    "username": "Robert",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-11-06",
+    "connections": {
+      "connected_users": [
+        "2",
+        "34",
+        "83",
+        "96"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "5",
+    "username": "Aleksandra",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-27",
+    "connections": {
+      "connected_users": [
+        "1",
+        "13",
+        "60"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "6",
+    "username": "Michał",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-10",
+    "connections": {
+      "connected_users": [
+        "3",
+        "95",
+        "28",
+        "44",
+        "72"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "7",
+    "username": "Katarzyna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-20",
+    "connections": {
+      "connected_users": [
+        "51",
+        "31"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "8",
+    "username": "Mateusz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-23",
+    "connections": {
+      "connected_users": [
+        "17",
+        "20",
+        "79",
+        "33",
+        "75"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "9",
+    "username": "Zofia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-07-10",
+    "connections": {
+      "connected_users": [
+        "29",
+        "51"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "10",
+    "username": "Jan",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-09",
+    "connections": {
+      "connected_users": [
+        "80"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "11",
+    "username": "Julia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-09",
+    "connections": {
+      "connected_users": [
+        "21",
+        "78",
+        "42",
+        "79"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "12",
+    "username": "Tomasz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-17",
+    "connections": {
+      "connected_users": [
+        "83",
+        "98"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "13",
+    "username": "Anna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-31",
+    "connections": {
+      "connected_users": [
+        "5",
+        "24",
+        "40",
+        "75",
+        "76"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "14",
+    "username": "Piotr",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-04-17",
+    "connections": {
+      "connected_users": [
+        "2",
+        "26",
+        "67",
+        "40",
+        "73"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "15",
+    "username": "Natalia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-09",
+    "connections": {
+      "connected_users": [
+        "25",
+        "58"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "16",
+    "username": "Paweł",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-02",
+    "connections": {
+      "connected_users": [
+        "49"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "17",
+    "username": "Maria",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-06",
+    "connections": {
+      "connected_users": [
+        "8",
+        "21",
+        "30",
+        "42",
+        "28",
+        "95"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "18",
+    "username": "Krzysztof",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-17",
+    "connections": {
+      "connected_users": [
+        "83",
+        "95",
+        "45",
+        "49",
+        "84"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "19",
+    "username": "Emilia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-05",
+    "connections": {
+      "connected_users": [
+        "87",
+        "56"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "20",
+    "username": "Marcin",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-01-30",
+    "connections": {
+      "connected_users": [
+        "1",
+        "8",
+        "40",
+        "86",
+        "42",
+        "54"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "21",
+    "username": "Maja",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-01",
+    "connections": {
+      "connected_users": [
+        "11",
+        "17",
+        "56",
+        "95"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "22",
+    "username": "Łukasz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-25",
+    "connections": {
+      "connected_users": [
+        "22",
+        "28",
+        "92"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "23",
+    "username": "Amelia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-01-15",
+    "connections": {
+      "connected_users": [],
+      "connection_count": 0
+    }
+  },
+  {
+    "id": "24",
+    "username": "Grzegorz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-25",
+    "connections": {
+      "connected_users": [
+        "13",
+        "2"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "25",
+    "username": "Alicja",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-14",
+    "connections": {
+      "connected_users": [
+        "15",
+        "31",
+        "59"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "26",
+    "username": "Adam",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-01-10",
+    "connections": {
+      "connected_users": [
+        "14",
+        "82"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "27",
+    "username": "Martyna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-17",
+    "connections": {
+      "connected_users": [
+        "75",
+        "38",
+        "76",
+        "93"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "28",
+    "username": "Rafał",
+    "access_level": "user",
+    "is_active": "0",
+    "lastlog": "2029-05-11",
+    "connections": {
+      "connected_users": [
+        "22",
+        "3",
+        "6",
+        "17",
+        "83",
+        "84",
+        "75",
+        "76"
+      ],
+      "connection_count": 8
+    }
+  },
+  {
+    "id": "29",
+    "username": "Ewelina",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-06",
+    "connections": {
+      "connected_users": [
+        "9",
+        "87",
+        "63",
+        "85"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "30",
+    "username": "Maciej",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-29",
+    "connections": {
+      "connected_users": [
+        "17",
+        "42"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "31",
+    "username": "Zygfryd",
+    "access_level": "admin",
+    "is_active": "1",
+    "lastlog": "2238-11-21",
+    "connections": {
+      "connected_users": [
+        "3",
+        "25",
+        "3",
+        "7",
+        "66",
+        "37"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "32",
+    "username": "Jakub",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-05",
+    "connections": {
+      "connected_users": [
+        "97",
+        "88"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "33",
+    "username": "Agnieszka",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-24",
+    "connections": {
+      "connected_users": [
+        "8",
+        "82"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "34",
+    "username": "Hubert",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-11",
+    "connections": {
+      "connected_users": [
+        "4",
+        "51",
+        "63",
+        "50"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "35",
+    "username": "Gabriela",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-13",
+    "connections": {
+      "connected_users": [],
+      "connection_count": 0
+    }
+  },
+  {
+    "id": "36",
+    "username": "Dawid",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-04-25",
+    "connections": {
+      "connected_users": [
+        "59",
+        "46"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "37",
+    "username": "Lena",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-07-25",
+    "connections": {
+      "connected_users": [
+        "31",
+        "68",
+        "80",
+        "59",
+        "94"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "38",
+    "username": "Szymon",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-11",
+    "connections": {
+      "connected_users": [
+        "27",
+        "78"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "39",
+    "username": "Barbara",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-11",
+    "connections": {
+      "connected_users": [
+        "46",
+        "40",
+        "77"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "40",
+    "username": "Oliwier",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-19",
+    "connections": {
+      "connected_users": [
+        "13",
+        "20",
+        "14",
+        "39",
+        "47",
+        "52",
+        "80",
+        "82",
+        "95"
+      ],
+      "connection_count": 9
+    }
+  },
+  {
+    "id": "41",
+    "username": "Nikola",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-25",
+    "connections": {
+      "connected_users": [
+        "75"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "42",
+    "username": "Wojciech",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-05-03",
+    "connections": {
+      "connected_users": [
+        "17",
+        "11",
+        "20",
+        "30",
+        "72"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "43",
+    "username": "Karolina",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-02",
+    "connections": {
+      "connected_users": [
+        "92",
+        "57"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "44",
+    "username": "Wiktor",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-19",
+    "connections": {
+      "connected_users": [
+        "6",
+        "95"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "45",
+    "username": "Kinga",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-01-13",
+    "connections": {
+      "connected_users": [
+        "2",
+        "18",
+        "54",
+        "62"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "46",
+    "username": "Artur",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-04-22",
+    "connections": {
+      "connected_users": [
+        "39",
+        "36"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "47",
+    "username": "Oliwia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-14",
+    "connections": {
+      "connected_users": [
+        "40",
+        "95",
+        "82"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "48",
+    "username": "Patryk",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-08-25",
+    "connections": {
+      "connected_users": [
+        "52"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "49",
+    "username": "Joanna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-20",
+    "connections": {
+      "connected_users": [
+        "16",
+        "18",
+        "65"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "50",
+    "username": "Damian",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-16",
+    "connections": {
+      "connected_users": [
+        "34"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "51",
+    "username": "Patrycja",
+    "access_level": "user",
+    "is_active": "0",
+    "lastlog": "2023-05-04",
+    "connections": {
+      "connected_users": [
+        "7",
+        "34",
+        "9",
+        "53",
+        "70",
+        "81",
+        "92"
+      ],
+      "connection_count": 7
+    }
+  },
+  {
+    "id": "52",
+    "username": "Filip",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-17",
+    "connections": {
+      "connected_users": [
+        "40",
+        "48",
+        "63"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "53",
+    "username": "Sandra",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-26",
+    "connections": {
+      "connected_users": [
+        "51"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "54",
+    "username": "Sebastian",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-01",
+    "connections": {
+      "connected_users": [
+        "1",
+        "45",
+        "20",
+        "62"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "55",
+    "username": "Izabela",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-20",
+    "connections": {
+      "connected_users": [
+        "68"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "56",
+    "username": "Daniel",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-30",
+    "connections": {
+      "connected_users": [
+        "19",
+        "21",
+        "93"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "57",
+    "username": "Beata",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-05-26",
+    "connections": {
+      "connected_users": [
+        "43",
+        "62",
+        "91"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "58",
+    "username": "Konrad",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-07",
+    "connections": {
+      "connected_users": [
+        "15"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "59",
+    "username": "Klaudia",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-12",
+    "connections": {
+      "connected_users": [
+        "36",
+        "25",
+        "37",
+        "70"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "60",
+    "username": "Bartłomiej",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-04",
+    "connections": {
+      "connected_users": [
+        "5"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "61",
+    "username": "Renata",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-15",
+    "connections": {
+      "connected_users": [],
+      "connection_count": 0
+    }
+  },
+  {
+    "id": "62",
+    "username": "Igor",
+    "access_level": "user",
+    "is_active": "0",
+    "lastlog": "2023-10-28",
+    "connections": {
+      "connected_users": [
+        "45",
+        "57",
+        "54",
+        "79"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "63",
+    "username": "Edyta",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-28",
+    "connections": {
+      "connected_users": [
+        "34",
+        "52",
+        "29",
+        "80"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "64",
+    "username": "Kamil",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-23",
+    "connections": {
+      "connected_users": [
+        "73"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "65",
+    "username": "Magdalena",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-08",
+    "connections": {
+      "connected_users": [
+        "49",
+        "89",
+        "91"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "66",
+    "username": "Bartosz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-25",
+    "connections": {
+      "connected_users": [
+        "31"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "67",
+    "username": "Małgorzata",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-02",
+    "connections": {
+      "connected_users": [
+        "14"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "68",
+    "username": "Witold",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-27",
+    "connections": {
+      "connected_users": [
+        "37",
+        "55",
+        "91"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "69",
+    "username": "Justyna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-27",
+    "connections": {
+      "connected_users": [],
+      "connection_count": 0
+    }
+  },
+  {
+    "id": "70",
+    "username": "Marian",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-25",
+    "connections": {
+      "connected_users": [
+        "51",
+        "59"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "71",
+    "username": "Iwona",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-10-06",
+    "connections": {
+      "connected_users": [
+        "3",
+        "78",
+        "88"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "72",
+    "username": "Jerzy",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-05-12",
+    "connections": {
+      "connected_users": [
+        "42",
+        "6",
+        "74",
+        "84"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "73",
+    "username": "Dorota",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-09-11",
+    "connections": {
+      "connected_users": [
+        "64",
+        "3",
+        "14",
+        "77"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "74",
+    "username": "Leszek",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-13",
+    "connections": {
+      "connected_users": [
+        "72",
+        "84"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "75",
+    "username": "Zuzanna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-13",
+    "connections": {
+      "connected_users": [
+        "13",
+        "27",
+        "41",
+        "8",
+        "28",
+        "76"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "76",
+    "username": "Cezary",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-14",
+    "connections": {
+      "connected_users": [
+        "13",
+        "27",
+        "28",
+        "75"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "77",
+    "username": "Aleksander",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-01-25",
+    "connections": {
+      "connected_users": [
+        "3",
+        "39",
+        "73"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "78",
+    "username": "Oskar",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-15",
+    "connections": {
+      "connected_users": [
+        "11",
+        "38",
+        "71"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "79",
+    "username": "Halina",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-16",
+    "connections": {
+      "connected_users": [
+        "8",
+        "11",
+        "62"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "80",
+    "username": "Leon",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-17",
+    "connections": {
+      "connected_users": [
+        "37",
+        "40",
+        "63",
+        "10"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "81",
+    "username": "Elżbieta",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-05-04",
+    "connections": {
+      "connected_users": [
+        "51"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "82",
+    "username": "Kazimierz",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-28",
+    "connections": {
+      "connected_users": [
+        "40",
+        "26",
+        "33",
+        "47",
+        "83",
+        "91"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "83",
+    "username": "Weronika",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-02",
+    "connections": {
+      "connected_users": [
+        "4",
+        "18",
+        "28",
+        "2",
+        "12",
+        "82"
+      ],
+      "connection_count": 6
+    }
+  },
+  {
+    "id": "84",
+    "username": "Andrzej",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-02-11",
+    "connections": {
+      "connected_users": [
+        "28",
+        "72",
+        "18",
+        "74",
+        "97"
+      ],
+      "connection_count": 5
+    }
+  },
+  {
+    "id": "85",
+    "username": "Grażyna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-29",
+    "connections": {
+      "connected_users": [
+        "29",
+        "89",
+        "96"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "86",
+    "username": "Jacek",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-19",
+    "connections": {
+      "connected_users": [
+        "20",
+        "93"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "87",
+    "username": "Michalina",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-08",
+    "connections": {
+      "connected_users": [
+        "19",
+        "29"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "88",
+    "username": "Przemysław",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-17",
+    "connections": {
+      "connected_users": [
+        "32",
+        "71"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "89",
+    "username": "Hanna",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-16",
+    "connections": {
+      "connected_users": [
+        "65",
+        "85"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "90",
+    "username": "Bogdan",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-12-24",
+    "connections": {
+      "connected_users": [],
+      "connection_count": 0
+    }
+  },
+  {
+    "id": "91",
+    "username": "Sylwia",
+    "access_level": "user",
+    "is_active": "0",
+    "lastlog": "2024-02-06",
+    "connections": {
+      "connected_users": [
+        "68",
+        "57",
+        "65",
+        "82"
+      ],
+      "connection_count": 4
+    }
+  },
+  {
+    "id": "92",
+    "username": "Borys",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-03-14",
+    "connections": {
+      "connected_users": [
+        "22",
+        "43",
+        "51"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "93",
+    "username": "Ludwika",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-01-19",
+    "connections": {
+      "connected_users": [
+        "86",
+        "27",
+        "56"
+      ],
+      "connection_count": 3
+    }
+  },
+  {
+    "id": "94",
+    "username": "Norbert",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-11-01",
+    "connections": {
+      "connected_users": [
+        "37"
+      ],
+      "connection_count": 1
+    }
+  },
+  {
+    "id": "95",
+    "username": "Roksana",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-06-28",
+    "connections": {
+      "connected_users": [
+        "6",
+        "18",
+        "44",
+        "47",
+        "17",
+        "21",
+        "40"
+      ],
+      "connection_count": 7
+    }
+  },
+  {
+    "id": "96",
+    "username": "Fryderyk",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-02-11",
+    "connections": {
+      "connected_users": [
+        "4",
+        "85"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "97",
+    "username": "Jolanta",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2023-07-28",
+    "connections": {
+      "connected_users": [
+        "32",
+        "84"
+      ],
+      "connection_count": 2
+    }
+  },
+  {
+    "id": "98",
+    "username": "Samuel",
+    "access_level": "user",
+    "is_active": "1",
+    "lastlog": "2024-11-29",
+    "connections": {
+      "connected_users": [
+        "12"
+      ],
+      "connection_count": 1
+    }
+  }
+]
