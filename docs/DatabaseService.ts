@@ -1,21 +1,21 @@
-import path from 'path';
+import path from "path";
 import { sql } from "drizzle-orm";
 import { text, integer, sqliteTable } from "drizzle-orm/sqlite-core";
-import { drizzle } from 'drizzle-orm/bun-sqlite';
-import { Database } from 'bun:sqlite';
-import { existsSync } from 'fs';
-import { SearchService } from './SearchService';
-import { VectorService } from './VectorService';
-import type { IDoc } from './TextService';
+import { drizzle } from "drizzle-orm/bun-sqlite";
+import { Database } from "bun:sqlite";
+import { existsSync } from "fs";
+import { SearchService } from "./SearchService";
+import { VectorService } from "./VectorService";
+import type { IDoc } from "./TextService";
 
-const documents = sqliteTable('documents', {
-  id: integer('id').primaryKey(),
-  uuid: text('uuid').notNull().unique(),
-  source_uuid: text('source_uuid').notNull(),
-  text: text('text').notNull(),
-  metadata: text('metadata').notNull(),
-  created_at: text('created_at').notNull(),
-  updated_at: text('updated_at').notNull(),
+const documents = sqliteTable("documents", {
+  id: integer("id").primaryKey(),
+  uuid: text("uuid").notNull().unique(),
+  source_uuid: text("source_uuid").notNull(),
+  text: text("text").notNull(),
+  metadata: text("metadata").notNull(),
+  created_at: text("created_at").notNull(),
+  updated_at: text("updated_at").notNull(),
 });
 
 export class DatabaseService {
@@ -24,7 +24,7 @@ export class DatabaseService {
   private vectorService: VectorService;
 
   constructor(
-    dbPath: string = 'hybrid/database.db',
+    dbPath: string = "hybrid/database.db",
     searchService: SearchService,
     vectorService: VectorService
   ) {
@@ -39,10 +39,10 @@ export class DatabaseService {
     this.vectorService = vectorService;
 
     if (!dbExists) {
-      console.log('Database does not exist. Initializing...');
+      console.log("Database does not exist. Initializing...");
       this.initializeDatabase();
     } else {
-      console.log('Database already exists. Checking for updates...');
+      console.log("Database already exists. Checking for updates...");
       this.initializeDatabase();
     }
   }
@@ -96,8 +96,8 @@ export class DatabaseService {
     const result = await this.db
       .insert(documents)
       .values({
-        uuid: document?.metadata?.uuid || '',
-        source_uuid: document?.metadata?.source_uuid || '',
+        uuid: document?.metadata?.uuid || "",
+        source_uuid: document?.metadata?.source_uuid || "",
         text: document.text,
         metadata: JSON.stringify(document.metadata),
         created_at: sql`CURRENT_TIMESTAMP`,
@@ -106,15 +106,16 @@ export class DatabaseService {
       .run();
 
     if (forSearch) {
-      // Sync to Algolia
-      await this.searchService.saveObject('documents', {
+      // Sync to Algolia - truncate text to stay within 10KB limit
+      const algoliaPayload = {
         objectID: document.metadata.uuid,
-        text: document.text,
+        text: document.text.substring(0, 3000), // Truncate to 3000 chars to leave room for metadata
         ...document.metadata,
-      });
+      };
+      await this.searchService.saveObject("documents", algoliaPayload);
 
-      // Sync to Qdrant
-      await this.vectorService.addPoints('documents', [
+      // Sync to Qdrant - keep full text
+      await this.vectorService.addPoints("documents", [
         {
           id: document.metadata.uuid,
           text: document.text,
@@ -132,7 +133,9 @@ export class DatabaseService {
       .set({
         uuid: document?.metadata?.uuid,
         text: document.text,
-        metadata: document.metadata ? JSON.stringify(document.metadata) : undefined,
+        metadata: document.metadata
+          ? JSON.stringify(document.metadata)
+          : undefined,
         updated_at: sql`CURRENT_TIMESTAMP`,
       })
       .where(sql`uuid = ${uuid}`)
@@ -140,18 +143,18 @@ export class DatabaseService {
 
     // Sync to Algolia
     if (document.text || document.metadata) {
-      await this.searchService.partialUpdateObject('documents', uuid, {
-        text: document.text,
+      await this.searchService.partialUpdateObject("documents", uuid, {
+        text: document.text ? document.text.substring(0, 3000) : undefined, // Truncate if text exists
         ...document.metadata,
       });
     }
 
     // Sync to Qdrant
-    await this.vectorService.addPoints('documents', [
+    await this.vectorService.addPoints("documents", [
       {
         id: document?.metadata?.uuid,
-        text: document.text || 'no text',
-        metadata: { text: document.text || 'no text', ...document.metadata },
+        text: document.text || "no text",
+        metadata: { text: document.text || "no text", ...document.metadata },
       },
     ]);
 
@@ -159,17 +162,24 @@ export class DatabaseService {
   }
 
   async deleteDocument(uuid: string) {
-    const result = await this.db.delete(documents).where(sql`uuid = ${uuid}`).run();
+    const result = await this.db
+      .delete(documents)
+      .where(sql`uuid = ${uuid}`)
+      .run();
     // Sync to Algolia
-    await this.searchService.deleteObject('documents', uuid);
+    await this.searchService.deleteObject("documents", uuid);
     // Sync to Qdrant
-    await this.vectorService.deletePoint('documents', uuid);
+    await this.vectorService.deletePoint("documents", uuid);
 
     return result;
   }
 
   async getDocumentByUuid(uuid: string): Promise<IDoc | undefined> {
-    const result = await this.db.select().from(documents).where(sql`uuid = ${uuid}`).get();
+    const result = await this.db
+      .select()
+      .from(documents)
+      .where(sql`uuid = ${uuid}`)
+      .get();
     if (result) {
       return {
         text: result.text,
@@ -180,8 +190,12 @@ export class DatabaseService {
   }
 
   async getDocumentsBySourceUuid(sourceUuid: string): Promise<IDoc[]> {
-    const results = await this.db.select().from(documents).where(sql`source_uuid = ${sourceUuid}`).all();
-    return results.map(result => ({
+    const results = await this.db
+      .select()
+      .from(documents)
+      .where(sql`source_uuid = ${sourceUuid}`)
+      .all();
+    return results.map((result) => ({
       uuid: result.uuid,
       text: result.text,
       metadata: JSON.parse(result.metadata),
@@ -189,10 +203,10 @@ export class DatabaseService {
   }
 
   async getAllDocuments(): Promise<IDoc[]> {
-    console.log('Fetching all documents');
+    console.log("Fetching all documents");
     const results = await this.db.select().from(documents).all();
     console.log(`Found ${results.length} documents`);
-    return results.map(result => ({
+    return results.map((result) => ({
       uuid: result.uuid,
       text: result.text,
       metadata: JSON.parse(result.metadata),
@@ -205,7 +219,7 @@ export class DatabaseService {
   ) {
     // Perform vector search
     const vectorResults = await this.vectorService.performSearch(
-      'documents',
+      "documents",
       vectorSearch.query,
       vectorSearch.filter,
       15
@@ -213,15 +227,16 @@ export class DatabaseService {
 
     // Perform full-text search (Algolia)
     const algoliaResults = await this.searchService.searchSingleIndex(
-      'documents',
+      "documents",
       fulltextSearch.query,
       fulltextSearch.filter
     );
 
     // Calculate RRF scores
     const rrf = this.calculateRRF(vectorResults, algoliaResults);
-    const avgScore = rrf.reduce((sum, item) => sum + item.score, 0) / rrf.length;
-    const filteredRrf = rrf.filter(item => item.score >= avgScore);
+    const avgScore =
+      rrf.reduce((sum, item) => sum + item.score, 0) / rrf.length;
+    const filteredRrf = rrf.filter((item) => item.score >= avgScore);
 
     // Restructure the results
     return filteredRrf.map(({ score, vectorRank, algoliaRank, ...rest }) => ({
@@ -229,8 +244,8 @@ export class DatabaseService {
       metadata: {
         uuid: rest.uuid,
         source_uuid: rest.source_uuid,
-        ...rest.metadata
-      }
+        ...rest.metadata,
+      },
     }));
   }
 
@@ -265,8 +280,9 @@ export class DatabaseService {
     return Array.from(resultMap.values())
       .map((data) => ({
         ...data,
-        score: (data.vectorRank !== Infinity ? 1 / (data.vectorRank + 60) : 0) +
-               (data.algoliaRank !== Infinity ? 1 / (data.algoliaRank + 60) : 0),
+        score:
+          (data.vectorRank !== Infinity ? 1 / (data.vectorRank + 60) : 0) +
+          (data.algoliaRank !== Infinity ? 1 / (data.algoliaRank + 60) : 0),
       }))
       .sort((a, b) => b.score - a.score);
   }
