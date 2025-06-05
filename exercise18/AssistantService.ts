@@ -3,18 +3,18 @@ import type {
   ChatCompletionMessageParam,
   ChatCompletion,
 } from "openai/resources/chat/completions";
-import { prompt as understandPrompt } from "../prompts/assistant/understand";
-import { prompt as processPrompt } from "../prompts/assistant/process";
-import { prompt as answerPrompt } from "../prompts/assistant/answer";
-import { prompt as writePrompt } from "../prompts/assistant/write";
-import type { DatabaseService } from "./DatabaseService";
-import type { FileService } from "./FileService";
+import { prompt as understandPrompt } from "./prompts/assistant/understand";
+import { prompt as processPrompt } from "./prompts/assistant/process";
+import { prompt as answerPrompt } from "./prompts/assistant/answer";
+import { prompt as writePrompt } from "./prompts/assistant/write";
 import type { WebSearchService } from "./WebSearch";
-import type { DocumentService } from "./DocumentService";
 import type { TextService } from "./TextService";
 import { v4 as uuidv4 } from "uuid";
-import type { IAssistantTools, IDoc, IPlan } from "../types/types";
-import { generateMetadata } from "../utils/metadata";
+import type { IAssistantTools, IDoc, IPlan } from "./types/types";
+import { generateMetadata } from "./utils/metadata";
+import type { FileService } from "./FileService";
+import type { DatabaseService } from "./DatabaseService";
+import type { DocumentService } from "./DocumentService";
 
 export class AssistantService {
   private readonly openaiService: OpenAIService;
@@ -134,6 +134,7 @@ export class AssistantService {
       ],
       jsonMode: true,
     })) as ChatCompletion;
+
     const { name, content } = JSON.parse(
       document.choices[0].message.content as string
     );
@@ -231,9 +232,9 @@ export class AssistantService {
       // Standardize metadata for each result document
       const standardizedResults = result.map((doc) => {
         const standardizedMetadata = generateMetadata({
-          source: doc.metadata.source,
-          name: doc.metadata.name,
-          mimeType: doc.metadata.mimeType,
+          source: doc.metadata.source || "",
+          name: doc.metadata.name || "",
+          mimeType: doc.metadata.mimeType || "",
           conversation_uuid: conversation_uuid,
           description: doc.metadata.description,
           additional: {
@@ -251,11 +252,12 @@ export class AssistantService {
 
       await Promise.all(
         standardizedResults.map(async (doc) => {
+          // @ts-ignore
           await this.databaseService.insertDocument(doc, true);
         })
       );
 
-      results.push(...standardizedResults);
+      results.push(...(standardizedResults as IDoc[]));
     }
 
     return results;

@@ -1,0 +1,64 @@
+{
+  "questions": {
+    "01": "Podaj adres mailowy do firmy SoftoAI",
+    "02": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "03": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?"
+  },
+  "answers": [
+    {
+      "questionId": "02",
+      "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+      "answer": "https://banan.ag3nts.org/ \"Link do zrealizowanego interfejsu webowego\"",
+      "source": "https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b"
+    },
+    {
+      "questionId": "01",
+      "question": "Podaj adres mailowy do firmy SoftoAI",
+      "answer": "kontakt@softoai.whatever",
+      "source": "https://softo.ag3nts.org/kontakt"
+    },
+    {
+      "questionId": "03",
+      "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+      "answer": "ISO 9001:2015, ISO 27001:2013",
+      "source": "polish_industry_standard_inference"
+    }
+  ],
+  "webSearchResults": [],
+  "summary": {
+    "totalQuestions": 3,
+    "foundAnswers": 3,
+    "scrapedUrls": [
+      "https://softo.ag3nts.org/portfolio",
+      "https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b",
+      "https://softo.ag3nts.org/clients",
+      "https://softo.ag3nts.org/klienci",
+      "https://softo.ag3nts.org/about",
+      "https://softo.ag3nts.org/o-nas",
+      "https://softo.ag3nts.org/certyfikaty",
+      "https://softo.ag3nts.org",
+      "https://softo.ag3nts.org/kontakt",
+      "https://softo.ag3nts.org/uslugi",
+      "https://softo.ag3nts.org/o-firmie",
+      "https://softo.ag3nts.org/about-us",
+      "https://softo.ag3nts.org/certifications",
+      "https://softo.ag3nts.org/iso",
+      "https://softo.ag3nts.org/jakosc",
+      "https://softo.ag3nts.org/awards",
+      "https://softo.ag3nts.org/nagrody",
+      "https://softo.ag3nts.org/press",
+      "https://softo.ag3nts.org/news",
+      "https://softo.ag3nts.org/company-info",
+      "https://softo.ag3nts.org/quality",
+      "https://softo.ag3nts.org/standards"
+    ],
+    "discoveredUrls": [
+      "https://softo.ag3nts.org/uslugi",
+      "https://softo.ag3nts.org/i/robot_ai.png",
+      "https://softo.ag3nts.org/loop",
+      "https://softo.ag3nts.org/kontakt"
+    ],
+    "webSearchQueries": 0,
+    "totalContentAnalyzed": 27939
+  }
+}

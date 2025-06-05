@@ -1,29 +1,36 @@
 import FirecrawlApp from "@mendable/firecrawl-js";
-import type OpenAI from "openai";
 import { OpenAIService } from "./OpenAIService";
+import { prompt as useSearchPrompt } from "./prompts/web/useSearch";
+import { prompt as askDomainsPrompt } from "./prompts/web/askDomains";
+import { prompt as selectResourcesToLoadPrompt } from "./prompts/web/pickResources";
+import { TextService } from "./TextService";
+import { v4 as uuidv4 } from "uuid";
+import type {
+  AllowedDomain,
+  Query,
+  SearchResult,
+  WebContent,
+} from "./types/types";
+import type { IDoc } from "./types/types";
+
 import type {
   ChatCompletion,
   ChatCompletionMessageParam,
 } from "openai/resources/chat/completions";
-import { selectResourcesToLoadPrompt } from "../websearch/prompts";
-
-// New type definition
-type SearchNecessityResponse = {
-  _thoughts: string;
-  shouldSearch: boolean;
-};
 
 export class WebSearchService {
   private openaiService: OpenAIService;
-  private allowedDomains: { name: string; url: string; scrappable: boolean }[];
+  private textService: TextService;
+  private allowedDomains: AllowedDomain[];
   private apiKey: string;
   private firecrawlApp: FirecrawlApp;
 
   constructor() {
     this.openaiService = new OpenAIService();
+    this.textService = new TextService();
     this.allowedDomains = [
       { name: "Wikipedia", url: "wikipedia.org", scrappable: true },
-      { name: "easycart", url: "easycart.pl", scrappable: true },
+      { name: "easycart", url: "easy.tools", scrappable: true },
       { name: "FS.blog", url: "fs.blog", scrappable: true },
       { name: "arXiv", url: "arxiv.org", scrappable: true },
       { name: "Instagram", url: "instagram.com", scrappable: false },
@@ -37,23 +44,90 @@ export class WebSearchService {
       },
       { name: "Youtube", url: "youtube.com", scrappable: false },
       { name: "Mrugalski / UWteam", url: "mrugalski.pl", scrappable: true },
+      { name: "overment", url: "brain.overment.com", scrappable: true },
       { name: "Hacker News", url: "news.ycombinator.com", scrappable: true },
-      { name: "SoftoAI", url: "softo.ag3nts.org", scrappable: true },
+      { name: "IMDB", url: "imdb.com", scrappable: true },
+      { name: "TechCrunch", url: "techcrunch.com", scrappable: true },
+      {
+        name: "Hacker News Newest",
+        url: "https://news.ycombinator.com/newest",
+        scrappable: true,
+      },
+      {
+        name: "TechCrunch Latest",
+        url: "https://techcrunch.com/latest",
+        scrappable: true,
+      },
+      { name: "OpenAI News", url: "https://openai.com/news", scrappable: true },
+      {
+        name: "Anthropic News",
+        url: "https://www.anthropic.com/news",
+        scrappable: true,
+      },
+      {
+        name: "DeepMind Press",
+        url: "https://deepmind.google/about/press",
+        scrappable: true,
+      },
+      {
+        name: "SoftoAI",
+        url: "https://softo.ag3nts.org",
+        scrappable: true,
+      },
     ];
     this.apiKey = process.env.FIRECRAWL_API_KEY || "";
     this.firecrawlApp = new FirecrawlApp({ apiKey: this.apiKey });
   }
 
+  async isWebSearchNeeded(messages: ChatCompletionMessageParam[]) {
+    const systemPrompt: ChatCompletionMessageParam = {
+      role: "system",
+      content: useSearchPrompt(),
+    };
+
+    const response = (await this.openaiService.completion({
+      messages: [systemPrompt, ...messages],
+      model: "gpt-4o",
+      jsonMode: true,
+    })) as ChatCompletion;
+    if (response.choices[0].message.content) {
+      return JSON.parse(response.choices[0].message.content);
+    }
+    return { shouldSearch: false };
+  }
+
+  async generateQueries(
+    messages: ChatCompletionMessageParam[]
+  ): Promise<{ queries: Query[]; thoughts: string }> {
+    const systemPrompt: ChatCompletionMessageParam = {
+      role: "system",
+      content: askDomainsPrompt(this.allowedDomains),
+    };
+
+    try {
+      const response = (await this.openaiService.completion({
+        messages: [systemPrompt, ...messages],
+        model: "gpt-4o",
+        jsonMode: true,
+      })) as ChatCompletion;
+
+      const result = JSON.parse(response.choices[0].message.content as string);
+      const filteredQueries = result.queries.filter(
+        (query: { q: string; url: string }) =>
+          this.allowedDomains.some((domain) => query.url.includes(domain.url))
+      );
+      // save documetn
+      return { queries: filteredQueries, thoughts: result._thoughts };
+    } catch (error) {
+      console.error("Error generating queries:", error);
+      return { queries: [], thoughts: "" };
+    }
+  }
+
   async searchWeb(
-    queries: { q: string; url: string }[],
-    conversation_uuid: string
-  ): Promise<
-    {
-      query: string;
-      domain: string;
-      results: { url: string; title: string; description: string }[];
-    }[]
-  > {
+    queries: Query[],
+    conversation_uuid?: string
+  ): Promise<SearchResult[]> {
     const searchResults = await Promise.all(
       queries.map(async ({ q, url }) => {
         try {
@@ -61,8 +135,7 @@ export class WebSearchService {
           const domain = new URL(
             url.startsWith("https://") ? url : `https://${url}`
           );
-          const siteQuery = `site:${domain} ${q}`;
-          console.log("siteQuery", siteQuery);
+          const siteQuery = `site:${domain.hostname.replace(/\/$/, "")} ${q}`;
           const response = await fetch("https://api.firecrawl.dev/v0/search", {
             method: "POST",
             headers: {
@@ -112,28 +185,19 @@ export class WebSearchService {
 
   async selectResourcesToLoad(
     messages: ChatCompletionMessageParam[],
-    filteredResults: {
-      query: string;
-      domain: string;
-      results: {
-        url: string;
-        title: string;
-        description: string;
-      }[];
-    }[]
+    filteredResults: SearchResult[]
   ): Promise<string[]> {
     const systemPrompt: ChatCompletionMessageParam = {
       role: "system",
-      content: selectResourcesToLoadPrompt(filteredResults),
+      content: selectResourcesToLoadPrompt({ resources: filteredResults }),
     };
 
     try {
-      const response = (await this.openaiService.completion(
-        [systemPrompt, ...messages],
-        "gpt-4o",
-        false,
-        true
-      )) as OpenAI.Chat.Completions.ChatCompletion;
+      const response = (await this.openaiService.completion({
+        messages: [systemPrompt, ...messages],
+        model: "gpt-4o",
+        jsonMode: true,
+      })) as ChatCompletion;
 
       if (response.choices[0].message.content) {
         const result = JSON.parse(response.choices[0].message.content);
@@ -168,7 +232,7 @@ export class WebSearchService {
   async scrapeUrls(
     urls: string[],
     conversation_uuid: string
-  ): Promise<{ url: string; content: string }[]> {
+  ): Promise<WebContent[]> {
     console.log("Input (scrapeUrls):", urls);
 
     // Filter out URLs that are not scrappable based on allowedDomains
@@ -186,7 +250,9 @@ export class WebSearchService {
           formats: ["markdown"],
         });
 
+        // @ts-ignore
         if (scrapeResult && scrapeResult.markdown) {
+          // @ts-ignore
           return { url, content: scrapeResult.markdown.trim() };
         } else {
           console.warn(`No markdown content found for URL: ${url}`);
@@ -200,5 +266,59 @@ export class WebSearchService {
 
     const scrapedResults = await Promise.all(scrapePromises);
     return scrapedResults.filter((result) => result.content !== "");
+  }
+
+  async search(query: string, conversation_uuid: string): Promise<IDoc[]> {
+    const messages: ChatCompletionMessageParam[] = [
+      { role: "user", content: query },
+    ];
+    const { queries } = await this.generateQueries(messages);
+
+    console.table(
+      queries.map((query, index) => ({
+        "Query Number": index + 1,
+        Query: query,
+      }))
+    );
+
+    let docs: IDoc[] = [];
+
+    if (queries.length > 0) {
+      const searchResults = await this.searchWeb(queries, conversation_uuid);
+      const resources = await this.selectResourcesToLoad(
+        messages,
+        searchResults
+      );
+      const scrapedContent = await this.scrapeUrls(
+        resources,
+        conversation_uuid
+      );
+
+      docs = await Promise.all(
+        searchResults.flatMap((searchResult) =>
+          searchResult.results.map(async (result) => {
+            const scrapedItem = scrapedContent.find(
+              (item) => item.url === result.url
+            );
+            const content = scrapedItem
+              ? scrapedItem.content
+              : result.description;
+
+            const doc = await this.textService.document(content, "gpt-4o", {
+              name: `${result.title}`,
+              description: `This is a result of a web search for the query: "${searchResult.query}"`,
+              source: result.url,
+              content_type: scrapedItem ? "complete" : "chunk",
+              uuid: uuidv4(),
+              conversation_uuid,
+            });
+
+            return doc;
+          })
+        )
+      );
+    }
+
+    return docs;
   }
 }
