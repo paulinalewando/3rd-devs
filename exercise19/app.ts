@@ -41,6 +41,7 @@ function getPositionFromInstruction(instruction: string): [number, number] {
 }
 
 // POST endpoint for drone instruction
+//@ts-ignore
 app.post("/api/instruction", async (req, res) => {
   const { instruction } = req.body;
   if (typeof instruction !== "string") {

@@ -90,7 +90,8 @@
     "exercise17": "bun run exercise17/app.ts",
     "exercise18": "bun run exercise18/app.ts",
     "exercise19": "bun run exercise19/app.ts",
-    "exercise19report": "bun run exercise19/report.ts"
+    "exercise19report": "bun run exercise19/report.ts",
+    "exercise20": "bun run exercise20/app.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"
