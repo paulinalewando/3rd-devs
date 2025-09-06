@@ -1,0 +1,69 @@
+=============== Execution log #01 - 2025/09/05 5:01 ===============
+
+> Starting Agent... [OK]
+> Reading data from file... [OK]
+> Processing user question... [OK]
+> Preparing plan...
+> Executing plan...
+  - Step 1: Check if this is username or place - select API or DB [OK]
+     - INFO: username found - 'Barbara'
+  - Step 2: Check if user exists in external MySQL database... [OK]
+     - INFO: user found - 'Barbara' with ID=39
+  - Step 3: Get user GPS coordinates from external API...
+     - preparing JSON for the request
+     - sending request to /gps
+> FATAL: something is wrong!
+    DEBUG: Error: Parse error on line 2:
+    { "userID": 39,}
+    ---------------^
+    Expecting 'STRING', got '}'
+> Sending debug information to developers... [OK]
+
+
+
+=============== Execution log #02 = 2025/07/30 21:37 ==============
+
+> Starting Agent... [OK]
+> Reading data from file... [OK]
+> Processing user question... [OK]
+> Preparing plan...
+> Executing plan...
+  - Step 1: Check if this is username or place - select API or DB [OK]
+     - place found - 'SOSNOWIEC'
+     - Check if place exists in external API /places... [OK]
+       - INFO: not founda. Skipping...
+  - Step 3: Checking another entry...
+     - place found - 'RADOM'
+     - Check if place exists in external API /places... [OK]
+     - INFO: found
+  - Step 4: Extracting users from that place... [OK]
+  - Step 5: Checking users in database [OK]
+     - Skipping user 'WALDEMAR' - doesn't exist
+     - Collecting ID's for other users
+  - Step 6: Getting GPS coordinates for users... [OK]
+     - preparing JSON for the request query=RAFAL
+     - Check if user exists in external MySQL database... [OK]
+       - INFO: user found - 'RAFAL' with ID=28
+     - preparing JSON for the request userID=28 [OK]
+     - sending request to /gps [OK]
+       - got: { "lat": 53.45202959644885, "lon": 18.759208410091723 }
+  - Step 7: Executing 'Step 6' for each user...
+     - got: error 501
+       - Retrying...
+       - Retrying...
+       - Retrying... [OK]
+       - 4 users processed [OK]
+  - Step 8: Preparing final data...
+       - JSON created [OK]
+       - sending data to c3ntrala.ag3nts.org/report as 'gps'
+  - Step 9: Checking confirmation from centrala...
+       - returned code: 0
+       - returned message: 'Answer accepted'
+> Turning off Agent... [OK]
+
+
+=============== Execution log #03 = 2025/07/26 10:21 ==============
+
+> Starting Agent... [OK]
+> Reading data from file...
+  - FATAL: Error reading file - this is not a valid JSON
